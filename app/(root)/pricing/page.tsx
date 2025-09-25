@@ -299,7 +299,7 @@ export default function PricingPage() {
             {/* Enhanced heading with gradient text */}
             <h1 className="relative mb-6">
               <span className="block text-4xl font-bold tracking-tight bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 dark:from-white dark:via-gray-100 dark:to-white bg-clip-text text-transparent sm:text-4xl lg:text-5xl">
-                Building an app? A SaaS? or just needs some custom components?
+                Building an App? A SaaS? or just needs some custom components?
               </span>
             </h1>
           </motion.div>

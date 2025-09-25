@@ -93,7 +93,7 @@ export function HeroSection() {
           </span>
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-start gap-3">
             <BrowseComponentsButton />
-            <BrowseBlocksButton />
+            {/* <BrowseBlocksButton /> */}
           </div>
         </motion.div>
 
@@ -120,7 +120,7 @@ export function HeroSection() {
           {/* Action Search Bar */}
           <div className="w-full max-w-[600px] bg-transparent">
             <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
-              Components
+              {"<Components />"}
             </span>
             {/* <ActionSearchBar
                             actions={allActions}
@@ -138,7 +138,7 @@ export function HeroSection() {
           className="w-full"
         >
           <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
-            AI Chat
+            {"<AI Chat />"}
           </span>
           {/* <AIInput_04 /> */}
           <div className="w-full h-48 rounded-xl border border-zinc-200 dark:border-zinc-800 flex items-center justify-center">
@@ -156,7 +156,7 @@ export function HeroSection() {
           {/* Left side - Buttons */}
           <div className="w-full">
             <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
-              Buttons
+              {"<Buttons />"}
             </span>
             <div className="w-full h-48 rounded-xl  border border-zinc-200 dark:border-zinc-800 flex flex-col items-center justify-center gap-3">
               <Link href="/docs/components/button">
@@ -171,7 +171,7 @@ export function HeroSection() {
           {/* Right side - Input */}
           <div className="w-full">
             <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
-              Input
+              {"<Input />"}
             </span>
             <Link href="/docs/components/input">
               <Input09 />
