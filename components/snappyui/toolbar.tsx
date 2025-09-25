@@ -125,7 +125,7 @@ export function Toolbar({
                   toolbarItems.find((item) => item.id === activeNotification)
                     ?.title
                 }{" "}
-                clicked!
+                Clicked!
               </div>
               {/* <motion.div
                 // variants={lineVariants}

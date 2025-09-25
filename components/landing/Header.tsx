@@ -87,7 +87,7 @@ export function Header() {
                       className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors flex items-center gap-2"
                     >
                       Templates
-                      <span className="text-white dark:text-green-600 border border-green-600 bg-green-300 dark:border-green-400 rounded-sm px-1.5 py-0.6 text-xs">
+                      <span className="text-[#3bb44b] dark:text-[#3bb44b] border border-[#3bb44b] bg-[#3BB44B33] dark:border-[#3bb44b] rounded-sm px-1.5 py-0.6 text-xs">
                         New
                       </span>
                     </Link>

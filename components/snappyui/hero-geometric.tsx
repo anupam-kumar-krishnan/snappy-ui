@@ -165,7 +165,9 @@ export default function HeroGeometric({
               width={20}
               height={20}
             /> */}
-            <span className="text-sm text-white/60 tracking-wide">{badge}</span>
+            <span className="text-sm text-white/60 tracking-wide pt-1.5 pb-1.5 pl-5 pr-5">
+              {badge}
+            </span>
           </motion.div>
 
           <motion.div
