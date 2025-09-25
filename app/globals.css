@@ -3,6 +3,9 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@import "fumadocs-ui/css/neutral.css";
+@import "fumadocs-ui/css/preset.css";
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
