@@ -51,7 +51,7 @@ export function Checkmark({
         cy="50"
         r="40"
         stroke={color}
-        variants={draw}
+        // variants={draw}
         custom={0}
         style={{
           strokeWidth,
@@ -62,7 +62,7 @@ export function Checkmark({
       <motion.path
         d="M30 50L45 65L70 35"
         stroke={color}
-        variants={draw}
+        // variants={draw}
         custom={1}
         style={{
           strokeWidth,
@@ -302,7 +302,7 @@ export default function CurrencyTransfer() {
                           transition: { duration: 0.5 },
                         }}
                       >
-                        €
+                        ₹
                       </motion.span>
                       <motion.span
                         className="font-medium text-zinc-900 dark:text-zinc-100 tracking-tight"
@@ -311,7 +311,7 @@ export default function CurrencyTransfer() {
                           transition: { duration: 0.2 },
                         }}
                       >
-                        460.00 EUR
+                        44324.39
                       </motion.span>
                     </div>
                   </div>
@@ -331,7 +331,7 @@ export default function CurrencyTransfer() {
               transition: { duration: 0.2 },
             }}
           >
-            Exchange Rate: 1 USD = 0.92 EUR
+            Exchange Rate: 1 USD = ₹ 88.65
           </motion.div>
 
           <AnimatePresence>
@@ -347,7 +347,7 @@ export default function CurrencyTransfer() {
                   <div className="flex justify-between">
                     <span>Date:</span>
                     <span className="text-zinc-900 dark:text-zinc-100">
-                      April 24, 2025
+                      September 15, 2025
                     </span>
                   </div>
                   <div className="flex justify-between">

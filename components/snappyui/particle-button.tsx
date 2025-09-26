@@ -84,6 +84,7 @@ export default function ParticleButton({
           "relative",
           showParticles && "scale-95",
           "transition-transform duration-100",
+          "bg-black text-white dark:bg-white dark:text-black",
           className
         )}
         {...props}

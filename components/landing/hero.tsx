@@ -120,7 +120,7 @@ export function HeroSection() {
           {/* Action Search Bar */}
           <div className="w-full max-w-[600px] bg-transparent">
             <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
-              {"<Components />"}
+              {"<Profile />"}
             </span>
             {/* <ActionSearchBar
                             actions={allActions}
@@ -160,7 +160,7 @@ export function HeroSection() {
             </span>
             <div className="w-full h-48 rounded-xl  border border-zinc-200 dark:border-zinc-800 flex flex-col items-center justify-center gap-3">
               <Link href="/docs/components/button">
-                <Btn14 label="Bring me" className=" w-42 py-5" />
+                <Btn14 label="Bring me" className="w-42 py-5" />
               </Link>
               <Link href="/docs/components/button">
                 <Btn03 className=" w-42 py-5" />

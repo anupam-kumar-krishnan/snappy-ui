@@ -32,7 +32,7 @@ export function Btn14({ label = "Submit", className, ...props }: Btn14Props) {
 
       {/* Content wrapper */}
       <div className="relative flex items-center justify-center gap-2">
-        <span className="text-lg font-medium bg-linear-to-b from-[#C76A1B] to-[#943F00] dark:from-[#FFC69D] dark:to-[#FF9838] bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(255,176,103,0.4)] tracking-tight">
+        <span className="text-base bg-linear-to-b from-[#C76A1B] to-[#943F00] dark:from-[#FFC69D] dark:to-[#FF9838] bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(255,176,103,0.4)] tracking-tight">
           {label}
         </span>
         <ArrowUpRight className="w-4 h-4 text-[#C76A1B] dark:text-[#FFC69D]" />
