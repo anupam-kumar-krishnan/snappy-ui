@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { CheckCircle, TrendingUp, Video, Globe } from "lucide-react";
+import { CheckCircle, TrendingUp, Globe, Cloud } from "lucide-react";
 
 interface BentoItem {
   title: string;
@@ -43,17 +43,19 @@ const itemsSample: BentoItem[] = [
     title: "Media Library",
     meta: "12GB used",
     description: "Cloud storage with intelligent content processing",
-    icon: <Video className="w-4 h-4 text-purple-500" />,
+    icon: <Cloud className="w-4 h-4 text-purple-500" />,
     tags: ["Storage", "CDN"],
-    colSpan: 2,
   },
   {
     title: "Global Network",
     meta: "6 regions",
-    description: "Multi-region deployment with edge computing",
+    description:
+      "Multi-region deployment combined with edge computing involves distributing applications",
     icon: <Globe className="w-4 h-4 text-sky-500" />,
     status: "Beta",
     tags: ["Infrastructure", "Edge"],
+    colSpan: 2,
+    hasPersistentHover: true,
   },
 ];
 

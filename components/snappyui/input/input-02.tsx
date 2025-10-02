@@ -23,7 +23,7 @@ interface TagInputProps {
 }
 const defaultKokonutTag: Tag = {
   id: "kokonut-ui",
-  label: "codesnippetui",
+  label: "Snappy UI",
   color:
     "bg-indigo-100 text-indigo-700 border border-indigo-200 dark:bg-indigo-900/30 dark:text-indigo-300 dark:border-indigo-700/30",
 };

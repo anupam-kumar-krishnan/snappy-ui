@@ -58,7 +58,7 @@ export default function AIInput_06() {
           </button>
         </div>
         <p className="ml-4 text-xs text-black/40 dark:text-white/40">
-          {inputValue.length + 20}/100 characters
+          {inputValue.length}/100 characters
         </p>
       </div>
     </div>
