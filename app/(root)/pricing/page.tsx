@@ -299,7 +299,8 @@ export default function PricingPage() {
             {/* Enhanced heading with gradient text */}
             <h1 className="relative mb-6">
               <span className="block text-4xl font-bold tracking-tight bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 dark:from-white dark:via-gray-100 dark:to-white bg-clip-text text-transparent sm:text-4xl lg:text-5xl">
-                Building an App? A SaaS? or just needs some custom components?
+                Building an App ? A SaaS ? or Just needs some custom components
+                ?
               </span>
             </h1>
           </motion.div>
@@ -311,14 +312,14 @@ export default function PricingPage() {
             transition={{ delay: 0.1 }}
             className="mx-auto max-w-2xl space-y-6"
           >
-            <p className="text-xl text-gray-600 dark:text-gray-300">
+            <p className="text-base text-gray-600 dark:text-gray-300">
               We have got you covered. Choose custom components or a complete
               page.
             </p>
-            {/* <p className="text-sm text-gray-500 dark:text-gray-400">
-                            Join hundreds of developers building amazing projects
-                            with CodeSnippet UI
-                        </p> */}
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              Join hundreds of developers building amazing projects with Snappy
+              UI
+            </p>
           </motion.div>
         </div>
 
@@ -778,7 +779,7 @@ function Checkmark({
         cy="50"
         r="40"
         stroke={color}
-        variants={draw}
+        // variants={draw}
         custom={0}
         style={{
           strokeWidth,
@@ -789,7 +790,7 @@ function Checkmark({
       <motion.path
         d="M30 50L45 65L70 35"
         stroke={color}
-        variants={draw}
+        // variants={draw}
         custom={1}
         style={{
           strokeWidth,
