@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Manrope:wght@200..800&display=swap");
 @import "tailwindcss";
 
 @custom-variant dark (&:is(.dark *));
@@ -83,7 +83,7 @@
 
 @layer utilities {
   body {
-    font-family: "TASA Orbiter", Arial, Helvetica, sans-serif;
+    font-family: "Lexend", sans-serif;
   }
 
   pre::-webkit-scrollbar {
@@ -155,11 +155,6 @@ button {
   }
 }
 
-a[href="/docs/components/bento-grid"] {
-  position: relative;
-  padding-right: 2.5rem;
-}
-
 a[href="/docs/components/bento-grid"]::after {
   content: "New";
   position: absolute;
@@ -217,23 +212,6 @@ a[href="/docs/blocks/ai-chat"]:not(#browse-blocks-button)::after {
   transform: translateY(-50%);
   background-color: rgba(128, 0, 128, 0.2);
   color: #cf40cf;
-  padding: 0.05rem 0.2rem;
-  border-radius: 0.25rem;
-  font-size: 0.75rem;
-  font-weight: 500;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-a[href="/docs/components/ai-input"]::after,
-a[href="/docs/components/list"]::after {
-  content: "New";
-  position: absolute;
-  right: 0.2rem;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(232, 138, 30, 0.2);
-  color: #ffa24b;
   padding: 0.05rem 0.2rem;
   border-radius: 0.25rem;
   font-size: 0.75rem;

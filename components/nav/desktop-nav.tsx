@@ -9,7 +9,7 @@ interface DesktopNavProps {
 
 export function DesktopNav({ sections, pathname }: DesktopNavProps) {
   return (
-    <div className="hidden md:block w-full z-40 space-y-4">
+    <div className="hidden md:block w-full z-40 space-y-4 bg-[#08090b]">
       <div
         className="bg-linear-to-b from-white/95 via-gray-50/95 to-white/95
                     dark:from-zinc-900/90 dark:via-zinc-800/90 dark:to-zinc-900/90

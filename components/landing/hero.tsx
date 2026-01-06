@@ -40,7 +40,7 @@ interface Action {
 
 export function HeroSection() {
   return (
-    <div className="mx-auto w-full max-w-7xl min-h-screen flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 px-4 sm:px-6 py-12 md:py-16 lg:py-20">
+    <div className="mx-auto w-full max-w-7xl min-h-screen flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 px-4 sm:px-6 py-12 md:py-16 lg:py-10">
       {/* Left side - Title and CTA */}
       <div className="w-full lg:w-[45%] flex flex-col items-start text-left space-y-8">
         <motion.div
@@ -49,26 +49,25 @@ export function HeroSection() {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] text-zinc-900 dark:text-zinc-100">
-            Craft with{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-500 via-fuchsia-500 to-purple-500 dark:from-rose-400 dark:via-fuchsia-400 dark:to-purple-400">
-              Precision
+            Build Stunning{" "}
+            <span className="flex bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-800 dark:from-indigo-500  dark:to-indigo-700 lg:h-22">
+              Landing Pages
             </span>
-            <br />
+            {/* <br />
             build with{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-fuchsia-500 to-rose-500 dark:from-purple-400 dark:via-fuchsia-400 dark:to-rose-400">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-800 dark:from-indigo-500  dark:to-indigo-700">
               ease
-            </span>
-            .
+            </span> */}
           </h1>
-          <p className="mt-6 text-base md:text-xl text-zinc-700 dark:text-zinc-300 max-w-lg">
+          <p className="mt-6 text-base md:text-md text-zinc-700 dark:text-zinc-300 max-w-lg">
             A curated collection of{" "}
-            <span className="font-semibold">100+ premium UI components</span>{" "}
+            <span className="font-semibold">10+ Premium UI components</span>{" "}
             crafted with{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-fuchsia-500 dark:from-rose-400 dark:to-fuchsia-400">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-600 dark:from-indigo-500 dark:to-indigo-600">
               Tailwind CSS
             </span>{" "}
             and{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-500 to-purple-500 dark:from-fuchsia-400 dark:to-purple-400">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-600 dark:from-indigo-500 dark:to-indigo-600">
               shadcn/ui
             </span>{" "}
             for modern React and Next.js applications.

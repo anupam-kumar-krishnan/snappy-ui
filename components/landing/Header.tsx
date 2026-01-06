@@ -60,7 +60,7 @@ export function Header() {
                 {/* Logo Section with Navigation Links */}
                 <div className="flex items-center gap-6">
                   <Link href="/" className="flex items-center gap-2">
-                    <Sparkles className="w-6 h-6 text-green-500 dark:text-green-400" />
+                    <Sparkles className="w-6 h-6 text-indigo-500 dark:text-indigo-400" />
 
                     <span className="hidden sm:block font-semibold">
                       Snappy UI

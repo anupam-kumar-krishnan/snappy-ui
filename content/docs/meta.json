@@ -1,6 +1,6 @@
 {
   "title": "Snappy UI Components",
-  "description": "The headless library",
+  "description": "The UI library",
   "icon": "Sparkles",
   "root": true,
   "defaultOpen": true,
