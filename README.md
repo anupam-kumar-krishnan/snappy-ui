@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<img width="1920" height="1080" alt="snappy UI" src="https://github.com/user-attachments/assets/9b2de34c-3a1f-436e-8486-345db2cb077f" />
 
-## Getting Started
+<img src="https://img.shields.io/badge/Next JS-000000?logo=next.js&logoColor=white">
+<img src="https://img.shields.io/badge/-React JS-61DAFB?logo=react&logoColor=white&style=flat">
+<img src="https://img.shields.io/badge/Tailwindcss-0F172A?&logo=tailwindcss">
+<img src="https://img.shields.io/badge/Shadcn UI-000000?&logo=shadcnui">
+<img src="https://img.shields.io/badge/Motion-fff72a?&logo=motion">
 
-First, run the development server:
+## _📖 Description_
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+A Modern UI Component Library - **Snappy UI** - built to help developers **design** and ship **stunning landing pages** faster.
+This library provides a curated collection of production-ready, responsive, and animated UI components that can be plugged directly into your **Next.js** or **React** projects.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Every component is crafted with performance, accessibility, and customization in mind—so you can focus on building products, not reinventing UI from scratch. Whether you’re creating a startup landing page, a portfolio, or a marketing website, these components are ready to use and easy to adapt to your brand.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## _🛠 Tech Stack_
 
-## Learn More
+- Next.js – App Router–ready, SEO-friendly, and optimized for performance
+- React.js – Component-driven architecture
+- Tailwind CSS – Utility-first styling for rapid customization
+- Shadcn/ui – Accessible, composable UI primitives
+- Motion – Smooth animations and micro-interactions
 
-To learn more about Next.js, take a look at the following resources:
+## _✨ Features_
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🚀 Ready-to-use unique landing page components (Hero, Bento Grid, Avatar Picker, AI Input Template, Alerts, Button, Card, etc.)<br>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🎨 Fully customizable using sTailwind CSS<br>
+📱 Responsive by default across all screen sizes<br>
+♿ Accessible components built on shadcn/ui principles<br>
+🧩 Composable architecture – use only what you need<br>
+⚡ Optimized for performance and modern web standards<br>
+🎬 Motion-powered animations for delightful user experience<br>
+📦 Drop-in integration with existing Next.js & React projects
