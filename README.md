@@ -1,10 +1,12 @@
 <img width="1920" height="1080" alt="snappy UI" src="https://github.com/user-attachments/assets/9b2de34c-3a1f-436e-8486-345db2cb077f" />
 
+<div align="middle">
 <img src="https://img.shields.io/badge/Next JS-000000?logo=next.js&logoColor=white">
 <img src="https://img.shields.io/badge/-React JS-61DAFB?logo=react&logoColor=white&style=flat">
 <img src="https://img.shields.io/badge/Tailwindcss-0F172A?&logo=tailwindcss">
 <img src="https://img.shields.io/badge/Shadcn UI-000000?&logo=shadcnui">
 <img src="https://img.shields.io/badge/Motion-fff72a?&logo=motion">
+</div>
 
 ## _📖 Description_
 
