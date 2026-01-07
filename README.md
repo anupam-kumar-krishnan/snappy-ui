@@ -19,6 +19,8 @@ This library provides a curated collection of production-ready, responsive, and 
 
 Every component is crafted with performance, accessibility, and customization in mind—so you can focus on building products, not reinventing UI from scratch. Whether you’re creating a startup landing page, a portfolio, or a marketing website, these components are ready to use and easy to adapt to your brand.
 
+<img width="1640" height="924" alt="Components Showcase" src="https://github.com/user-attachments/assets/70bb61b9-e2f9-40ea-a4fd-cfc0311f0fd8" />
+
 ## _🛠 Tech Stack_
 
 - **Next.js** – App Router–ready, SEO-friendly, and Optimized for Performance
