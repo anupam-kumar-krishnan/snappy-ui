@@ -18,11 +18,11 @@ interface Card02Props {
 }
 
 const defaultProfile = {
-  name: "Eugene K",
+  name: "Ayush Singh",
   role: "Senior Developer",
   image:
     "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-01-n0x8HFv8EUetf9z6ht0wScJKoTHqf8.png",
-  status: "Open to Work",
+  status: "Open To Work",
   skills: [
     { name: "Frontend", level: 5 },
     { name: "Backend", level: 4 },

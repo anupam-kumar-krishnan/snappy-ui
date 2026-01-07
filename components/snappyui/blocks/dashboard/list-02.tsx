@@ -37,7 +37,7 @@ const TRANSACTIONS: Transaction[] = [
   {
     id: "1",
     title: "Apple Store Purchase",
-    amount: "$999.00",
+    amount: "₹50,000.00",
     type: "outgoing",
     category: "shopping",
     icon: ShoppingCart,
@@ -47,7 +47,7 @@ const TRANSACTIONS: Transaction[] = [
   {
     id: "2",
     title: "Salary Deposit",
-    amount: "$4,500.00",
+    amount: "₹80,000.00",
     type: "incoming",
     category: "transport",
     icon: Wallet,
@@ -57,7 +57,7 @@ const TRANSACTIONS: Transaction[] = [
   {
     id: "3",
     title: "Netflix Subscription",
-    amount: "$15.99",
+    amount: "₹1000.00",
     type: "outgoing",
     category: "entertainment",
     icon: CreditCard,
@@ -67,7 +67,7 @@ const TRANSACTIONS: Transaction[] = [
   {
     id: "4",
     title: "Apple Store Purchase",
-    amount: "$999.00",
+    amount: "₹4000.00",
     type: "outgoing",
     category: "shopping",
     icon: ShoppingCart,
@@ -77,7 +77,7 @@ const TRANSACTIONS: Transaction[] = [
   {
     id: "5",
     title: "Supabase Subscription",
-    amount: "$15.99",
+    amount: "₹4000.00",
     type: "outgoing",
     category: "entertainment",
     icon: CreditCard,
@@ -87,7 +87,7 @@ const TRANSACTIONS: Transaction[] = [
   {
     id: "6",
     title: "Vercel Subscription",
-    amount: "$15.99",
+    amount: "₹6000.00",
     type: "outgoing",
     category: "entertainment",
     icon: CreditCard,
@@ -115,7 +115,7 @@ export default function List02({
           <h2 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
             Recent Activity
             <span className="text-xs font-normal text-zinc-600 dark:text-zinc-400 ml-1">
-              (23 transactions)
+              (15 transactions)
             </span>
           </h2>
           <span className="text-xs text-zinc-600 dark:text-zinc-400">

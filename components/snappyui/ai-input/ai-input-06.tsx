@@ -23,6 +23,7 @@ export default function AIInput_06() {
       <div className="relative max-w-xl w-full mx-auto flex items-start flex-col gap-2">
         <div className="relative max-w-xl w-full mx-auto">
           <Textarea
+            maxLength={100}
             ref={textareaRef}
             id="ai-input-06"
             placeholder="Ask me anything!"

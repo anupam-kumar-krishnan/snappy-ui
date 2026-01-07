@@ -15,14 +15,14 @@ export default function List06() {
         <div className="flex items-center justify-between mb-2.5">
           <div className="flex items-center gap-2">
             <img
-              src="https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-01-n0x8HFv8EUetf9z6ht0wScJKoTHqf8.png"
+              src="https://png.pngtree.com/png-vector/20220817/ourmid/pngtree-cartoon-man-avatar-with-beard-vector-ilustration-png-image_6110777.png"
               alt="Author"
               className="w-8 h-8 rounded-full ring-1 ring-zinc-100 dark:ring-zinc-800"
             />
             <div>
               <div className="flex items-center gap-1.5">
                 <h3 className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                  Sarah Chen
+                  Rahul Kumar
                 </h3>
                 <span className="text-xs text-zinc-500">·</span>
                 <span className="text-xs text-zinc-500">2h</span>
@@ -46,14 +46,14 @@ export default function List06() {
         <div className="p-4">
           <div className="flex gap-3">
             <img
-              src="https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-04-uuYHWIRvVPi01gEt6NwnGyjqLeeZhz.png"
+              src="https://www.shutterstock.com/image-vector/minimalist-black-white-avatar-bearded-600nw-2588844235.jpg"
               alt="Responder"
               className="w-7 h-7 rounded-full ring-1 ring-zinc-100 dark:ring-zinc-800 flex-none"
             />
             <div className="flex-1 space-y-2">
               <div className="flex items-center gap-1.5">
                 <span className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                  Alex Rivera
+                  Akshay Singh
                 </span>
                 <span className="text-xs text-zinc-500">·</span>
                 <span className="text-xs text-zinc-500">45m</span>
@@ -85,14 +85,14 @@ export default function List06() {
         <div className="p-4 pl-12">
           <div className="flex gap-3">
             <img
-              src="https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-01-n0x8HFv8EUetf9z6ht0wScJKoTHqf8.png"
+              src="https://img.freepik.com/premium-vector/male-face-avatar-icon-set-flat-design-social-media-profiles_1281173-3806.jpg?semt=ais_hybrid&w=740"
               alt="Responder"
               className="w-7 h-7 rounded-full ring-1 ring-zinc-100 dark:ring-zinc-800 flex-none"
             />
             <div className="flex-1 space-y-2">
               <div className="flex items-center gap-1.5">
                 <span className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                  Maya Patel
+                  Pranav Singh
                 </span>
                 <span className="text-xs text-zinc-500">·</span>
                 <span className="text-xs text-zinc-500">12m</span>
@@ -124,7 +124,7 @@ export default function List06() {
         <div className="p-3">
           <div className="flex items-center gap-2">
             <img
-              src="https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-03-JateJIUhtd3PXynaMG9TDWQ55j5AVP.png"
+              src="https://img.freepik.com/vetores-premium/personagem-de-menino-em-fundo-branco_995281-5601.jpg?semt=ais_hybrid&w=740&q=80"
               alt="Your avatar"
               className="w-7 h-7 rounded-full ring-1 ring-zinc-100 dark:ring-zinc-800"
             />

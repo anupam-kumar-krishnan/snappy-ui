@@ -51,7 +51,7 @@ export default function Alert05() {
                     Payment Received
                   </h3>
                   <span className="px-2.5 py-1 rounded-full text-sm font-semibold bg-white/80 dark:bg-white/10 text-indigo-600 dark:text-indigo-300 backdrop-blur-xs">
-                    $2,400.00
+                    ₹40,000.00
                   </span>
                 </div>
                 <p className="text-sm text-indigo-700 dark:text-indigo-300">

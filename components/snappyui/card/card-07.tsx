@@ -14,7 +14,7 @@ interface Card07Props {
 }
 
 export default function Card07({
-  date = "Today, December 14",
+  date = "Monday, December 15, 2025",
   events = [
     {
       title: "Design Review",

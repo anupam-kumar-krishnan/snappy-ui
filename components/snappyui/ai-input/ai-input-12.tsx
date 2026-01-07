@@ -14,20 +14,20 @@ import { useAutoResizeTextarea } from "@/hooks/use-auto-resize-textarea";
 
 const AVATARS = [
   {
-    src: "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-01-n0x8HFv8EUetf9z6ht0wScJKoTHqf8.png",
-    nickname: "Sarah Chen",
+    src: "https://img.freepik.com/vetores-premium/personagem-de-menino-em-fundo-branco_995281-5601.jpg?semt=ais_hybrid&w=740&q=80",
+    nickname: "Dhruv Kumar",
   },
   {
-    src: "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-02-albo9B0tWOSLXCVZh9rX9KFxXIVWMr.png",
-    nickname: "Michael Johnson",
+    src: "https://img.freepik.com/premium-vector/male-face-avatar-icon-set-flat-design-social-media-profiles_1281173-3806.jpg",
+    nickname: "Ram Singh",
   },
   {
-    src: "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-03-JateJIUhtd3PXynaMG9TDWQ55j5AVP.png",
-    nickname: "Emma Wilson",
+    src: "https://img.freepik.com/premium-vector/flat-illustration-men-wearing-jacket-brown-black-color-combination_981536-1552.jpg?semt=ais_hybrid&w=740&q=80",
+    nickname: "Krishna Singh",
   },
   {
-    src: "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-04-uuYHWIRvVPi01gEt6NwnGyjqLeeZhz.png",
-    nickname: "David Brown",
+    src: "https://img.freepik.com/premium-vektor/arka-planda-izole-edilmis-erkek-avatar-profil-resmi-erkek-icin-avatar-profil-resmi_1293239-4841.jpg",
+    nickname: "Pranav Singh",
   },
 ];
 

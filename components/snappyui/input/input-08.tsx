@@ -42,7 +42,7 @@ export default function Input_08({
   defaultValue = "#3b82f6",
   swatches = defaultSwatches,
   showOpacity = true,
-  label = "Color",
+  label = "Color Selector",
 }: ColorInputProps) {
   const [color, setColor] = useState(defaultValue); // Base color without opacity
   const [opacity, setOpacity] = useState(100); // Opacity (0-100)

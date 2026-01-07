@@ -24,17 +24,17 @@ interface TweetCardProps {
 }
 
 export default function TweetCard({
-  authorName = "Dorian",
-  authorHandle = "dorian_baffier",
-  authorImage = "https://pbs.twimg.com/profile_images/1854916060807675904/KtBJsyWr_400x400.jpg",
+  authorName = "Anupam",
+  authorHandle = "anupam_krishnan",
+  authorImage = "https://img.freepik.com/vetores-premium/personagem-de-menino-em-fundo-branco_995281-5601.jpg?semt=ais_hybrid&w=740&q=80",
   content = [
-    "All components from codesnippetui can now be open in @v0 🎉",
+    "All components from Snappy UI can now be open in @v0 🎉",
     "1. Click on 'Open in V0'",
     "2. Customize with prompts",
     "3. Deploy to your app",
   ],
   isVerified = true,
-  timestamp = "Jan 18, 2025",
+  timestamp = "Jan 7, 2026",
   reply = {
     authorName: "shadcn",
     authorHandle: "shadcn",
@@ -42,14 +42,11 @@ export default function TweetCard({
       "https://pbs.twimg.com/profile_images/1593304942210478080/TUYae5z7_400x400.jpg",
     content: "Awesome.",
     isVerified: true,
-    timestamp: "Jan 18",
+    timestamp: "Jan 9, 2026",
   },
 }: TweetCardProps) {
   return (
-    <Link
-      href="https://x.com/dorian_baffier/status/1880291036410572934"
-      target="_blank"
-    >
+    <Link href="#" target="_blank">
       <div
         className={cn(
           "w-full min-w-[400px] md:min-w-[500px] max-w-xl p-1.5 rounded-2xl relative isolate overflow-hidden",

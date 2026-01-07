@@ -6,7 +6,7 @@ interface SwooshTextProps {
 }
 
 export default function Text_06({
-  text = "HONGDAE",
+  text = "SNAPPY UI",
   className = "",
 }: SwooshTextProps) {
   return (
@@ -57,7 +57,7 @@ export default function Text_06({
             }}
           />
         </div>
-        <span className="relative italic text-emerald-400">{text}</span>
+        <span className="relative italic text-indigo-400">{text}</span>
       </div>
     </div>
   );

@@ -24,7 +24,7 @@ export default function List03() {
             Today's Tasks
           </h2>
           <p className="text-sm text-zinc-500 dark:text-zinc-400">
-            June 12, 2024
+            January 2, 2026
           </p>
         </div>
         <div className="flex items-center gap-2">

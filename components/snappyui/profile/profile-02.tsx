@@ -13,12 +13,12 @@ interface Profile02Props {
 }
 
 const defaultProfile = {
-  name: "Alex Thompson",
+  name: "Akshay Singh",
   role: "Product Designer",
   avatar:
     "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-02-albo9B0tWOSLXCVZh9rX9KFxXIVWMr.png",
-  location: "San Francisco, CA",
-  email: "hello@codesnippetui.com",
+  location: "Bengaluru, KA",
+  email: "hello@snappyui.com",
   website: "https://ui.snappyui.dev/",
   bio: "Designing interfaces that bridge the gap between complexity and simplicity.",
 } satisfies Required<Profile02Props>;

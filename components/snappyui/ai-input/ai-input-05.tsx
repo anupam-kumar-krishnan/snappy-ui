@@ -52,7 +52,7 @@ export default function AIInput_05() {
         <Textarea
           id="ai-input-05"
           placeholder="Ask me anything!"
-          className="max-w-xl bg-black/5 dark:bg-white/5 w-full rounded-3xl pl-4 pr-12 placeholder:text-black/70 dark:placeholder:text-white/70 border-none text-black dark:text-white resize-none text-wrap min-h-[40px] py-4"
+          className="max-w-xl bg-black/5 dark:bg-white/5 w-full rounded-3xl pl-4 pr-12 placeholder:text-black/70 dark:placeholder:text-white/70 border-none text-black dark:text-white resize-none text-wrap min-h-[40px] py-4 overflow-y-hidden"
           ref={textareaRef}
           value={inputValue}
           onKeyDown={(e) => {

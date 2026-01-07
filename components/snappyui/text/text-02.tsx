@@ -11,7 +11,7 @@ interface TextSplitProps {
 }
 
 const Text_02: React.FC<TextSplitProps> = ({
-  text = "Payout fees",
+  text = "Snappy UI",
   className = "",
   containerClassName = "",
   splitSpacing = 2,

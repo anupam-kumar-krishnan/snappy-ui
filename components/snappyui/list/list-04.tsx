@@ -28,7 +28,7 @@ export default function List04() {
             </p>
           </div>
           <time className="text-sm font-medium text-zinc-500 dark:text-zinc-400 tabular-nums">
-            Tues, Nov 12
+            Fri, Jan 2
           </time>
         </div>
       </div>

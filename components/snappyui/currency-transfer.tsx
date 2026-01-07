@@ -311,7 +311,7 @@ export default function CurrencyTransfer() {
                           transition: { duration: 0.2 },
                         }}
                       >
-                        44324.39
+                        44948.35
                       </motion.span>
                     </div>
                   </div>
@@ -331,7 +331,7 @@ export default function CurrencyTransfer() {
               transition: { duration: 0.2 },
             }}
           >
-            Exchange Rate: 1 USD = ₹ 88.65
+            Exchange Rate: 1 USD = ₹ 89.90
           </motion.div>
 
           <AnimatePresence>
@@ -347,7 +347,7 @@ export default function CurrencyTransfer() {
                   <div className="flex justify-between">
                     <span>Date:</span>
                     <span className="text-zinc-900 dark:text-zinc-100">
-                      September 15, 2025
+                      January 7, 2026
                     </span>
                   </div>
                   <div className="flex justify-between">

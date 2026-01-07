@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { motion } from "motion/react";
+import { motion, type Variants } from "motion/react";
 
 interface BouncingTextProps {
   text?: string;
@@ -11,12 +11,12 @@ interface BouncingTextProps {
 }
 
 export default function Text_05({
-  text = "BOUNCE",
+  text = "SNAPPY UI",
   className = "",
   delay = 0.1,
   bouncingIndices = [0, 2, 5],
 }: BouncingTextProps) {
-  const letterAnimation = {
+  const letterAnimation: Variants = {
     initial: { y: 0 },
     animate: {
       y: [-8, 0],
@@ -27,7 +27,7 @@ export default function Text_05({
           type: "spring",
           damping: 10,
           stiffness: 100,
-          repeat: Number.POSITIVE_INFINITY,
+          repeat: Infinity,
           repeatType: "reverse",
           duration: 1.2,
         },
@@ -35,7 +35,7 @@ export default function Text_05({
           type: "spring",
           damping: 10,
           stiffness: 100,
-          repeat: Number.POSITIVE_INFINITY,
+          repeat: Infinity,
           repeatType: "reverse",
           duration: 1.2,
         },
@@ -43,7 +43,7 @@ export default function Text_05({
           type: "spring",
           damping: 10,
           stiffness: 100,
-          repeat: Number.POSITIVE_INFINITY,
+          repeat: Infinity,
           repeatType: "reverse",
           duration: 1.2,
         },
@@ -60,7 +60,7 @@ export default function Text_05({
             className={cn(
               "text-4xl font-bold text-black dark:text-white",
               "transition-colors duration-200",
-              "hover:text-purple-500 dark:hover:text-purple-400",
+              "hover:text-indigo-500 dark:hover:text-indigo-400",
               className
             )}
             variants={letterAnimation}
@@ -78,11 +78,11 @@ export default function Text_05({
           </motion.span>
         ) : (
           <span
-            key={`text-05-1-${letter}`}
+            key={`text-05-${index}`}
             className={cn(
               "text-4xl font-bold text-black dark:text-white",
               "transition-colors duration-200",
-              "hover:text-purple-500 dark:hover:text-purple-400",
+              "hover:text-indigo-500 dark:hover:text-indigo-400",
               className
             )}
           >

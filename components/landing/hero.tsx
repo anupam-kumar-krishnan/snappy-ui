@@ -63,12 +63,12 @@ export function HeroSection() {
             A curated collection of{" "}
             <span className="font-semibold">10+ Premium UI components</span>{" "}
             crafted with{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-600 dark:from-indigo-500 dark:to-indigo-600">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-600 dark:from-indigo-500 dark:to-indigo-600 font-semibold">
               Tailwind CSS
             </span>{" "}
             and{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-600 dark:from-indigo-500 dark:to-indigo-600">
-              shadcn/ui
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-600 dark:from-indigo-500 dark:to-indigo-600 font-semibold">
+              Shadcn UI
             </span>{" "}
             for modern React and Next.js applications.
           </p>

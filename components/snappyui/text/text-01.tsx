@@ -3,7 +3,7 @@ export default function Text_01() {
     <div className="flex items-center justify-center">
       <div className="relative px-4 py-2 overflow-hidden">
         <h1 className="text-4xl sm:text-3xl font-bold shimmer-text">
-          Classy Shimmer
+          Snappy UI
         </h1>
       </div>
       <style>{`

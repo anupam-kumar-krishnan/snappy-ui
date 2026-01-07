@@ -27,21 +27,21 @@ export default function Card03({
   description = "Revamp the design of the website",
   teamMembers = [
     {
-      name: "Alex",
+      name: "Dhruv",
       role: "Lead Designer",
       avatar:
         "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-01-n0x8HFv8EUetf9z6ht0wScJKoTHqf8.png",
       status: "online",
     },
     {
-      name: "Sarah",
+      name: "Sahil",
       role: "Developer",
       avatar:
         "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-02-albo9B0tWOSLXCVZh9rX9KFxXIVWMr.png",
       status: "busy",
     },
     {
-      name: "Mike",
+      name: "Mayur",
       role: "PM",
       avatar:
         "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-03-JateJIUhtd3PXynaMG9TDWQ55j5AVP.png",

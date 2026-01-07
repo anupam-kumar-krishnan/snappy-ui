@@ -17,7 +17,7 @@ export default function Card_10() {
             </div>
           </div>
           <p className="text-xs text-zinc-500 dark:text-zinc-400">
-            123 Healthcare Ave, Medical Center
+            Dental Care, Medical Center, Wakad
           </p>
         </div>
 
@@ -31,10 +31,10 @@ export default function Card_10() {
             />
             <div>
               <div className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                Sarah Johnson
+                Hitesh Kumar
               </div>
               <div className="text-xs text-zinc-500 dark:text-zinc-400">
-                sarah.j@example.com
+                hitesh@xyz.com
               </div>
             </div>
           </div>

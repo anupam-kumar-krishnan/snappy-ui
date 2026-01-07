@@ -29,6 +29,60 @@ export default function Features() {
           viewport={{ once: true }}
           transition={{
             duration: 0.3,
+            delay: 0.6,
+            ease: [0.23, 1, 0.32, 1],
+          }}
+          className={cn(
+            "text-black dark:text-white flex flex-col items-center gap-2 relative col-span-1 col-start-1 md:col-auto"
+          )}
+          onMouseEnter={() => handleMouseEnter("Next.js")}
+          onMouseLeave={handleMouseLeave}
+        >
+          <Nextjs className="w-8 h-8" aria-label="Next.js" />
+          <motion.span
+            animate={{
+              scale: hoveredItem === "Next.js" ? 1.1 : 1,
+              fontWeight: hoveredItem === "Next.js" ? 500 : 400,
+            }}
+            className="text-xs text-center mt-1 whitespace-nowrap"
+          >
+            Next.js
+          </motion.span>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.3,
+            delay: 0.7,
+            ease: [0.23, 1, 0.32, 1],
+          }}
+          className={cn(
+            "text-black dark:text-white flex flex-col items-center gap-2 relative col-span-1 col-start-3 md:col-auto"
+          )}
+          onMouseEnter={() => handleMouseEnter("React")}
+          onMouseLeave={handleMouseLeave}
+        >
+          <ReactIcon className="w-8 h-8" aria-label="React" />
+          <motion.span
+            animate={{
+              scale: hoveredItem === "React" ? 1.1 : 1,
+              fontWeight: hoveredItem === "React" ? 500 : 400,
+            }}
+            className="text-xs text-center mt-1 whitespace-nowrap"
+          >
+            React
+          </motion.span>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.3,
             delay: 0.1,
             ease: [0.23, 1, 0.32, 1],
           }}
@@ -118,60 +172,7 @@ export default function Features() {
             }}
             className="text-xs text-center mt-1 whitespace-nowrap"
           >
-            shadcn/ui
-          </motion.span>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{
-            duration: 0.3,
-            delay: 0.6,
-            ease: [0.23, 1, 0.32, 1],
-          }}
-          className={cn(
-            "text-black dark:text-white flex flex-col items-center gap-2 relative col-span-1 col-start-1 md:col-auto"
-          )}
-          onMouseEnter={() => handleMouseEnter("Next.js")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <Nextjs className="w-8 h-8" aria-label="Next.js" />
-          <motion.span
-            animate={{
-              scale: hoveredItem === "Next.js" ? 1.1 : 1,
-              fontWeight: hoveredItem === "Next.js" ? 500 : 400,
-            }}
-            className="text-xs text-center mt-1 whitespace-nowrap"
-          >
-            Next.js
-          </motion.span>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{
-            duration: 0.3,
-            delay: 0.7,
-            ease: [0.23, 1, 0.32, 1],
-          }}
-          className={cn(
-            "text-black dark:text-white flex flex-col items-center gap-2 relative col-span-1 col-start-3 md:col-auto"
-          )}
-          onMouseEnter={() => handleMouseEnter("React")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <ReactIcon className="w-8 h-8" aria-label="React" />
-          <motion.span
-            animate={{
-              scale: hoveredItem === "React" ? 1.1 : 1,
-              fontWeight: hoveredItem === "React" ? 500 : 400,
-            }}
-            className="text-xs text-center mt-1 whitespace-nowrap"
-          >
-            React
+            Shadcn UI
           </motion.span>
         </motion.div>
       </div>

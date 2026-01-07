@@ -258,13 +258,7 @@ export default function PricingPage() {
   return (
     <div className="min-h-screen px-4 py-24 relative bg-zinc-50 dark:bg-white">
       {/* Dark mode backgrounds */}
-      <div className="absolute inset-0 hidden dark:block">
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-zinc-900/50 to-black" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-zinc-800/20 via-zinc-900/20 to-black" />
-        <div className="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-white/[0.02] to-transparent blur-[150px]" />
-        <div className="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-l from-white/[0.02] to-transparent blur-[150px]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-800/30 via-black to-black" />
-      </div>
+      <div className="absolute inset-0 hidden dark:block dark:bg-black"></div>
 
       {/* Light mode backgrounds */}
       <div className="absolute inset-0 dark:hidden">

@@ -54,8 +54,8 @@ export const Preview = ({ isLoading, imageUrl }: PreviewProps) => {
         <Card className="w-full max-w-md border-0 shadow-none bg-transparent">
           <CardContent className="flex flex-col items-center gap-4 p-6">
             <div className="relative w-12 h-12">
-              <Loader2 className="w-full h-full animate-spin text-fuchsia-500" />
-              <div className="absolute inset-0 bg-linear-to-tr from-transparent via-transparent to-fuchsia-500/10 rounded-full animate-spin-slow" />
+              <Loader2 className="w-full h-full animate-spin text-indigo-600" />
+              <div className="absolute inset-0 bg-linear-to-tr from-transparent via-transparent to-indigo-500/10 rounded-full animate-spin-slow" />
             </div>
             <div className="space-y-1 text-center">
               <p className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
@@ -67,7 +67,7 @@ export const Preview = ({ isLoading, imageUrl }: PreviewProps) => {
             </div>
             <div className="w-full h-1.5 bg-zinc-200 dark:bg-zinc-700 rounded-full overflow-hidden">
               <div
-                className="h-full bg-fuchsia-500 transition-all duration-300 ease-linear"
+                className="h-full bg-indigo-500 transition-all duration-300 ease-linear"
                 style={{ width: `${progress}%` }}
               />
             </div>

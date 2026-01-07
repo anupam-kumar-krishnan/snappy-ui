@@ -41,25 +41,25 @@ const defaultProfile = {
   members: [
     {
       id: "1",
-      name: "Sarah Chen",
-      role: "Lead Designer",
-      location: "San Francisco, CA",
-      email: "sarah@example.com",
+      name: "Manu Arora",
+      role: "Lead Design Engineer",
+      location: "Bengaluru, KA",
+      email: "manuarora@xyz.com",
       avatar:
         "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-01-n0x8HFv8EUetf9z6ht0wScJKoTHqf8.png",
       availability: "available",
-      skills: ["UI Design", "Design Systems", "User Research"],
+      skills: ["UI Design", "Design Systems", "User Research", "Motion"],
       social: {
-        github: "sarahchen",
-        linkedin: "sarahchen",
+        github: "manuarora",
+        linkedin: "manuarora",
       },
     },
     {
       id: "2",
-      name: "Mike Wilson",
-      role: "Senior Designer",
-      location: "London, UK",
-      email: "mike@example.com",
+      name: "Utkarsh Singh",
+      role: "Senior Design Engineer",
+      location: "Bengaluru, KA",
+      email: "utkarsh@xyz.com",
       avatar:
         "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-02-albo9B0tWOSLXCVZh9rX9KFxXIVWMr.png",
       availability: "busy",

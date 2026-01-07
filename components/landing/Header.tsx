@@ -18,14 +18,14 @@ export function Header() {
           className="flex items-center justify-center gap-2"
         >
           <span className="flex items-center gap-2">
-            <PartyPopper className="w-3.5 h-3.5" />
-            <span className="text-transparent bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 bg-clip-text font-semibold">
-              Explore new components
+            <PartyPopper className="w-6 h-6 text-indigo-500" />
+            <span className="text-transparent bg-gradient-to-r from-indigo-600 via-indigo-700 to-indigo-600 bg-clip-text font-semibold">
+              Explore New Components
             </span>
           </span>
 
           <div className="group relative inline-flex items-center gap-2 px-3 py-1 text-sm rounded-lg bg-zinc-900 dark:bg-zinc-100 transition-colors">
-            <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 opacity-40 group-hover:opacity-80 blur-sm transition-opacity duration-500" />
+            <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-600 via-indigo-700 to-indigo-800 opacity-40 group-hover:opacity-80 blur-sm transition-opacity duration-500" />
             <div className="relative z-10 flex items-center gap-2">
               <span className="text-white dark:text-zinc-900">
                 Snappy UI Pro

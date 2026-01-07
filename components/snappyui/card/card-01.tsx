@@ -39,10 +39,10 @@ interface Card01Props {
 
 const defaultProps: Card01Props = {
   author: {
-    name: "Dorian Baffier",
-    username: "dorian_baffier",
+    name: "Anupam Kumar Krishnan",
+    username: "anupam_krishnan",
     avatar:
-      "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-04-uuYHWIRvVPi01gEt6NwnGyjqLeeZhz.png",
+      "https://img.freepik.com/premium-vector/male-face-avatar-icon-set-flat-design-social-media-profiles_1281173-3806.jpg?w=360",
     timeAgo: "2h ago",
   },
   content: {
@@ -50,7 +50,7 @@ const defaultProps: Card01Props = {
     link: {
       title: "Snappy UI Documentation",
       description: "A comprehensive guide to Snappy UI",
-      icon: <LinkIcon className="w-5 h-5 text-blue-500" />,
+      icon: <LinkIcon className="w-5 h-5 text-blue-400" />,
     },
   },
   engagement: {

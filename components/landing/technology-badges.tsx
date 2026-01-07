@@ -21,7 +21,7 @@ export function TechnologyBadges() {
       >
         <Sparkles className="w-4 h-4 mr-2 text-orange-500" />
         <span className="bg-clip-text text-transparent bg-linear-to-r from-orange-800 to-orange-600 dark:from-orange-200 dark:to-orange-400">
-          Optionally with shadcn/ui and Framer Motion
+          Optionally with Shadcn UI and Motion
         </span>
       </div>
     </div>
