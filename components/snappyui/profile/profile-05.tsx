@@ -45,8 +45,7 @@ const defaultProfile = {
       role: "Lead Design Engineer",
       location: "Bengaluru, KA",
       email: "manuarora@xyz.com",
-      avatar:
-        "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-01-n0x8HFv8EUetf9z6ht0wScJKoTHqf8.png",
+      avatar: "https://cdn-icons-png.flaticon.com/128/1458/1458201.png",
       availability: "available",
       skills: ["UI Design", "Design Systems", "User Research", "Motion"],
       social: {
@@ -60,8 +59,7 @@ const defaultProfile = {
       role: "Senior Design Engineer",
       location: "Bengaluru, KA",
       email: "utkarsh@xyz.com",
-      avatar:
-        "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-02-albo9B0tWOSLXCVZh9rX9KFxXIVWMr.png",
+      avatar: "https://cdn-icons-png.flaticon.com/128/4140/4140037.png",
       availability: "busy",
       skills: ["Product Design", "Prototyping", "Animation"],
       social: {

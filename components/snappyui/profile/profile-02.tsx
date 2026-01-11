@@ -16,7 +16,7 @@ const defaultProfile = {
   name: "Akshay Singh",
   role: "Product Designer",
   avatar:
-    "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-02-albo9B0tWOSLXCVZh9rX9KFxXIVWMr.png",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFWBnyvJtrWYVL5q2Nwl1UkCOxOPxFGoORjg&s",
   location: "Bengaluru, KA",
   email: "hello@snappyui.com",
   website: "https://ui.snappyui.dev/",

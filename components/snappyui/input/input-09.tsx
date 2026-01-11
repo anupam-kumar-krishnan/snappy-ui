@@ -24,10 +24,10 @@ const animations = {
 } as const;
 
 const avatarUrls = [
-  "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-01-n0x8HFv8EUetf9z6ht0wScJKoTHqf8.png",
-  "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-02-albo9B0tWOSLXCVZh9rX9KFxXIVWMr.png",
-  "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-03-JateJIUhtd3PXynaMG9TDWQ55j5AVP.png",
-  "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-04-uuYHWIRvVPi01gEt6NwnGyjqLeeZhz.png",
+  "https://cdn-icons-png.flaticon.com/128/4140/4140037.png",
+  "https://cdn-icons-png.flaticon.com/128/1458/1458201.png",
+  "https://cdn-icons-png.flaticon.com/128/4140/4140048.png",
+  "https://cdn-icons-png.flaticon.com/128/4140/4140060.png",
 ] as const;
 
 export default function Input09() {
@@ -67,8 +67,8 @@ export default function Input09() {
       >
         <Image
           src={avatarUrls[i % avatarUrls.length]}
-          width={96}
-          height={96}
+          width={86}
+          height={86}
           alt={`Team member ${i + 1}`}
           className="rounded-full object-cover"
         />

@@ -21,7 +21,7 @@ const defaultProfile = {
   name: "Ayush Singh",
   role: "Senior Developer",
   image:
-    "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-01-n0x8HFv8EUetf9z6ht0wScJKoTHqf8.png",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-7rNoxhm4gkTn9-B60kz1teGEQO-fQg-U8d5MeXReWQ&s",
   status: "Open To Work",
   skills: [
     { name: "Frontend", level: 5 },

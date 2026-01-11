@@ -18,9 +18,9 @@ export const baseOptions: BaseLayoutProps = {
       text: "Pricing",
       url: "/pricing",
     },
-    // {
-    //   type: "custom",
-    //   children: <HeaderPro />,
-    // },
+    {
+      type: "custom",
+      children: <HeaderPro />,
+    },
   ],
 };

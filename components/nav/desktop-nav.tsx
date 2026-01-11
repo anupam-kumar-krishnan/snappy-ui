@@ -31,8 +31,8 @@ export function DesktopNav({ sections, pathname }: DesktopNavProps) {
                 const isActive =
                   item.href === "/docs"
                     ? pathname === "/docs" || pathname === "/docs/introduction"
-                    : item.href === "/docs/components/block/"
-                    ? pathname.startsWith("/docs/components/block")
+                    : item.href === "/docs/components/blocks/"
+                    ? pathname.startsWith("/docs/components/blocks")
                     : pathname === item.href;
                 return (
                   <Link

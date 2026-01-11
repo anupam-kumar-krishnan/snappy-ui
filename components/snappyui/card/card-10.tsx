@@ -24,7 +24,7 @@ export default function Card_10() {
         <div className="p-5 space-y-5">
           <div className="flex items-center gap-3 p-3 bg-zinc-100 dark:bg-zinc-800 rounded-xl">
             <Image
-              src="https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-01-n0x8HFv8EUetf9z6ht0wScJKoTHqf8.png"
+              src="https://cdn-icons-png.flaticon.com/128/4140/4140037.png"
               width={40}
               height={40}
               alt="Avatar"

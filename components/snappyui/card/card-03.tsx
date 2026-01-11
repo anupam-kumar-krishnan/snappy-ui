@@ -29,22 +29,19 @@ export default function Card03({
     {
       name: "Dhruv",
       role: "Lead Designer",
-      avatar:
-        "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-01-n0x8HFv8EUetf9z6ht0wScJKoTHqf8.png",
+      avatar: "https://cdn-icons-png.flaticon.com/128/4140/4140037.png",
       status: "online",
     },
     {
       name: "Sahil",
       role: "Developer",
-      avatar:
-        "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-02-albo9B0tWOSLXCVZh9rX9KFxXIVWMr.png",
+      avatar: "https://cdn-icons-png.flaticon.com/128/1458/1458201.png",
       status: "busy",
     },
     {
       name: "Mayur",
       role: "PM",
-      avatar:
-        "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-03-JateJIUhtd3PXynaMG9TDWQ55j5AVP.png",
+      avatar: "https://cdn-icons-png.flaticon.com/128/3426/3426666.png",
       status: "offline",
     },
   ],

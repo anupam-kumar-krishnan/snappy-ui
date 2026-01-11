@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
-import { CircleDollarSign } from "lucide-react";
+import { IndianRupee } from "lucide-react";
 
 export default function Alert05() {
   return (
@@ -34,7 +34,7 @@ export default function Alert05() {
                 "shadow-lg shadow-indigo-500/20"
               )}
             >
-              <CircleDollarSign className="h-6 w-6 text-white" />
+              <IndianRupee className="h-6 w-6 text-white" />
             </div>
           </motion.div>
 

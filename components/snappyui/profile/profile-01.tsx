@@ -26,8 +26,7 @@ interface Profile01Props {
 const defaultProfile = {
   name: "Piyush Garg",
   role: "Software Engineer (SE)",
-  avatar:
-    "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-02-albo9B0tWOSLXCVZh9rX9KFxXIVWMr.png",
+  avatar: "https://cdn-icons-png.flaticon.com/128/4140/4140037.png",
   subscription: "Free Trial",
 } satisfies Required<Profile01Props>;
 
