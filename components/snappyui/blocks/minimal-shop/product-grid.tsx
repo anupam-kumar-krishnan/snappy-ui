@@ -29,7 +29,7 @@ export function ProductGrid({ products, onProductSelect }: ProductGridProps) {
             <h3 className="text-xs font-medium truncate">{product.name}</h3>
             <div className="flex justify-between items-center">
               <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                ${product.price}
+                ₹{product.price}
               </p>
               <p className="text-[10px] text-zinc-400 dark:text-zinc-500">
                 {product.category}

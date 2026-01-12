@@ -15,8 +15,8 @@ interface BreadcrumbItem {
 
 export default function TopNav() {
   const breadcrumbs: BreadcrumbItem[] = [
-    { label: "codesnippetui", href: "#" },
-    { label: "dashboard", href: "#" },
+    { label: "Snappy UI", href: "#" },
+    { label: "Dashboard", href: "#" },
   ];
 
   return (
@@ -63,7 +63,7 @@ export default function TopNav() {
         <DropdownMenu>
           <DropdownMenuTrigger className="focus:outline-none">
             <Image
-              src="https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-01-n0x8HFv8EUetf9z6ht0wScJKoTHqf8.png"
+              src="https://cdn-icons-png.flaticon.com/128/1458/1458201.png"
               alt="User avatar"
               width={28}
               height={28}
@@ -75,7 +75,7 @@ export default function TopNav() {
             sideOffset={8}
             className="w-[280px] sm:w-80 bg-background border-border rounded-lg shadow-lg"
           >
-            <Profile01 avatar="https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-01-n0x8HFv8EUetf9z6ht0wScJKoTHqf8.png" />
+            <Profile01 avatar="https://cdn-icons-png.flaticon.com/128/1458/1458201.png" />
           </DropdownMenuContent>
         </DropdownMenu>
       </div>

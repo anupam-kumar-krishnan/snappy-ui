@@ -2,7 +2,7 @@ import Input_10 from "@/components/snappyui/input/input-10";
 import Alert04 from "@/components/snappyui/alert/alert-04";
 import Input_08 from "@/components/snappyui/input/input-08";
 import Btn12 from "@/components/snappyui/buttons/btn-12";
-import { Btn14 } from "../snappyui/buttons/btn-14";
+import Btn15 from "../snappyui/buttons/btn-15";
 
 interface ComponentShowcaseCardProps {
   className: string;
@@ -26,7 +26,7 @@ export function ComponentShowcaseCard({
               component: (
                 <div className="w-full flex justify-center gap-4">
                   <Btn12 className="w-full h-13" label="Welcome" />
-                  <Btn14 className="w-full h-13" label="Let's Start" />
+                  <Btn15 className="w-full h-13" label="Let's Start" />
                 </div>
               ),
               label: "Welcome",

@@ -18,9 +18,8 @@ interface Profile04Props {
 const defaultProfile = {
   name: "Manu Arora",
   role: "Design Engineer",
-  avatar:
-    "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-04-uuYHWIRvVPi01gEt6NwnGyjqLeeZhz.png",
-  subscription: "Maker",
+  avatar: "https://cdn-icons-png.freepik.com/512/168/168726.png",
+  subscription: "Pro Maker",
   email: "hello@snappyui.com",
   level: 42,
   currentExp: 2800,

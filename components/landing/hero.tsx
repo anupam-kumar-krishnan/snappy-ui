@@ -17,7 +17,7 @@ import {
   Code,
   Layers,
 } from "lucide-react";
-import { Btn14 } from "../snappyui/buttons/btn-14";
+import Btn15 from "../snappyui/buttons/btn-15";
 import Btn03 from "../snappyui/buttons/btn-03";
 import Input09 from "../snappyui/input/input-09";
 import AIInput_04 from "../snappyui/ai-input/ai-input-04";
@@ -159,7 +159,7 @@ export function HeroSection() {
             </span>
             <div className="w-full h-48 rounded-xl  border border-zinc-200 dark:border-zinc-800 flex flex-col items-center justify-center gap-3">
               <Link href="/docs/components/button">
-                <Btn14 label="Bring me" className="w-42 py-5" />
+                <Btn15 label="Bring me" className="w-42 py-5" />
               </Link>
               <Link href="/docs/components/button">
                 <Btn03 className=" w-42 py-5" />

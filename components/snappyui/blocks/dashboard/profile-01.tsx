@@ -26,8 +26,7 @@ interface Profile01Props {
 const defaultProfile = {
   name: "Eugene An",
   role: "Prompt Engineer",
-  avatar:
-    "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-02-albo9B0tWOSLXCVZh9rX9KFxXIVWMr.png",
+  avatar: "https://cdn-icons-png.flaticon.com/128/1458/1458201.png",
   subscription: "Free Trial",
 } satisfies Required<Profile01Props>;
 

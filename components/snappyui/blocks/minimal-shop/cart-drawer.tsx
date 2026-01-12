@@ -68,7 +68,7 @@ export function CartDrawer({
                     Qty: {item.quantity}
                   </p>
                   <p className="text-base font-medium mt-1">
-                    ${item.price * item.quantity}
+                    ₹{item.price * item.quantity}
                   </p>
                 </div>
               </div>
