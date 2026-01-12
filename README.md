@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="snappy UI" src="https://github.com/user-attachments/assets/9b2de34c-3a1f-436e-8486-345db2cb077f" />
+<img width="1920" height="1080" alt="snappy UI" src="https://github.com/user-attachments/assets/432ec5b7-479e-4537-b04c-b377956611e2" />
 
 <br><br>
 
@@ -6,8 +6,8 @@
 <img src="https://img.shields.io/badge/Next JS-000000?logo=next.js&logoColor=white">
 <img src="https://img.shields.io/badge/-React JS-61DAFB?logo=react&logoColor=black&style=flat">
 <img src="https://img.shields.io/badge/Tailwind CSS-0F172A?&logo=tailwindcss">
-<img src="https://img.shields.io/badge/Shadcn UI-000000?&logo=shadcnui">
 <img src="https://img.shields.io/badge/Motion-fff72a?&logo=motion">
+<img src="https://img.shields.io/badge/Shadcn UI-000000?&logo=shadcnui">
 </div>
 
 ## _📖 Snappy UI_
