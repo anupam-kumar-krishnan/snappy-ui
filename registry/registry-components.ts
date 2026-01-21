@@ -1094,18 +1094,6 @@ export const component: Registry = [
     ],
   },
   {
-    name: "particle-button",
-    type: "registry:component",
-    dependencies: ["lucide-react", "motion"],
-    registryDependencies: ["button"],
-    files: [
-      {
-        path: "components/snappyui/particle-button.tsx",
-        type: "registry:component",
-      },
-    ],
-  },
-  {
     name: "currency-transfer",
     type: "registry:component",
     dependencies: ["lucide-react", "motion"],
