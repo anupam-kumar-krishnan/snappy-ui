@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "motion/react";
+import { motion, Variants } from "motion/react";
 import { cn } from "@/lib/utils";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -263,7 +263,7 @@ const avatars: Avatar[] = [
 ];
 
 // Add these animation variants at the top level
-const mainAvatarVariants = {
+const mainAvatarVariants: Variants = {
   initial: {
     y: 20,
     opacity: 0,
@@ -273,8 +273,8 @@ const mainAvatarVariants = {
     opacity: 1,
     transition: {
       type: "spring",
-      stiffness: 200,
-      damping: 20,
+      stiffness: 300,
+      damping: 30,
     },
   },
   exit: {
@@ -286,7 +286,10 @@ const mainAvatarVariants = {
   },
 };
 
-const pickerVariants = {
+const pickerVariants: {
+  container: Variants;
+  item: Variants;
+} = {
   container: {
     initial: { opacity: 0 },
     animate: {
@@ -314,7 +317,7 @@ const pickerVariants = {
   },
 };
 
-const selectedVariants = {
+const selectedVariants: Variants = {
   initial: {
     opacity: 0,
     rotate: -180,
@@ -423,7 +426,7 @@ export default function AvatarPicker() {
                     onClick={() => handleAvatarSelect(avatar)}
                     className={cn(
                       "relative w-12 h-12 rounded-full overflow-hidden border-2",
-                      "transition-all duration-300"
+                      "transition-all duration-300",
                     )}
                     variants={pickerVariants.item}
                     whileHover={{
