@@ -145,7 +145,7 @@ export default function PreviewContent({
         onMouseLeave={() => setIsHovered(false)}
       >
         <div className="relative flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <a
+          {/* <a
             href={`${prePath}/preview/${link}`}
             target="_blank"
             rel="noreferrer"
@@ -164,7 +164,7 @@ export default function PreviewContent({
                 "transition-transform duration-200 group-hover:rotate-12"
               )}
             />
-          </a>
+          </a> */}
 
           <div className="flex items-center gap-2">
             <OpenInV0Button name={openInV0()} />
@@ -183,7 +183,7 @@ export default function PreviewContent({
                 "transition-all duration-200",
                 "group flex items-center gap-1",
                 "rounded-lg",
-                "shadow-none"
+                "shadow-none",
               )}
             >
               {isTerminalCopied ? (
@@ -195,7 +195,7 @@ export default function PreviewContent({
                   className={cn(
                     "h-3.5 w-3.5",
                     "transition-all duration-200",
-                    "group-hover:rotate-12"
+                    "group-hover:rotate-12",
                   )}
                 />
               )}
@@ -225,7 +225,7 @@ export default function PreviewContent({
                     "transition-all duration-200",
                     "group flex items-center gap-1",
                     "rounded-lg",
-                    "shadow-none"
+                    "shadow-none",
                   )}
                 >
                   {isCopied ? (
@@ -237,7 +237,7 @@ export default function PreviewContent({
                       className={cn(
                         "h-3.5 w-3.5",
                         "transition-all duration-200",
-                        "group-hover:rotate-12"
+                        "group-hover:rotate-12",
                       )}
                     />
                   )}
