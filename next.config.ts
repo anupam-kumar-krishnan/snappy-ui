@@ -5,7 +5,7 @@ const withMDX = createMDX();
 const nextConfig = {
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
   outputFileTracingIncludes: {
-    "/**": ["components/codesnippetui/**/*"],
+    "/**": ["components/snappyui/**/*"],
   },
   async headers() {
     return [

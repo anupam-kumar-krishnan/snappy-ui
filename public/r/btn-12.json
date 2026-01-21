@@ -1,0 +1,18 @@
+{
+  "name": "btn-12",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "type": "registry:component",
+      "content": "import { Button } from \"@/components/ui/button\";\r\nimport { cn } from \"@/lib/utils\";\r\n\r\ninterface Btn12Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {\r\n  label?: string;\r\n  className?: string;\r\n}\r\n\r\nexport default function Btn12({\r\n  label = \"Fancy Button\",\r\n  className,\r\n  ...props\r\n}: Btn12Props) {\r\n  return (\r\n    <Button\r\n      variant=\"ghost\"\r\n      className={cn(\r\n        \"group relative w-1/2 h-12 px-4 rounded-lg overflow-hidden transition-all duration-500\",\r\n        className\r\n      )}\r\n      {...props}\r\n    >\r\n      <div className=\"absolute inset-0 rounded-lg p-[2px] bg-linear-to-b from-[#654358] via-[#17092A] to-[#2F0D64]\">\r\n        <div className=\"absolute inset-0 bg-[#170928] rounded-lg opacity-90\" />\r\n      </div>\r\n\r\n      <div className=\"absolute inset-[2px] bg-[#170928] rounded-lg opacity-95\" />\r\n\r\n      <div className=\"absolute inset-[2px] bg-linear-to-r from-[#170928] via-[#1d0d33] to-[#170928] rounded-lg opacity-90\" />\r\n      <div className=\"absolute inset-[2px] bg-linear-to-b from-[#654358]/40 via-[#1d0d33] to-[#2F0D64]/30 rounded-lg opacity-80\" />\r\n      <div className=\"absolute inset-[2px] bg-linear-to-br from-[#C787F6]/10 via-[#1d0d33] to-[#2A1736]/50 rounded-lg\" />\r\n\r\n      <div className=\"absolute inset-[2px] shadow-[inset_0_0_15px_rgba(199,135,246,0.15)] rounded-lg\" />\r\n\r\n      <div className=\"relative flex items-center justify-center gap-2\">\r\n        <span className=\"text-lg font-light bg-linear-to-b from-[#D69DDE] to-[#B873F8] bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(199,135,246,0.4)] tracking-tighter\">\r\n          {label}\r\n        </span>\r\n      </div>\r\n\r\n      <div className=\"absolute inset-[2px] opacity-0 transition-opacity duration-300 bg-linear-to-r from-[#2A1736]/20 via-[#C787F6]/10 to-[#2A1736]/20 group-hover:opacity-100 rounded-lg\" />\r\n    </Button>\r\n  );\r\n}\r\n",
+      "path": "/components/snappyui/buttons/btn-12.tsx",
+      "target": "/components/snappyui/btn-12.tsx"
+    }
+  ]
+}

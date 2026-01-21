@@ -15,7 +15,7 @@ interface PreviewProps {
 
 const prePath = process.env.VERCEL_PROJECT_PRODUCTION_URL
   ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-  : "https://ui.codesnipet.dev";
+  : "http://localhost:3000";
 
 export function Preview({
   children,
@@ -51,7 +51,7 @@ export function Preview({
             className={cn(
               "p-2 md:p-8 flex justify-center items-center relative border rounded-2xl my-4 border-zinc-400 dark:border-zinc-800 not-prose",
               compact ? "min-h-[100px]" : "min-h-[400px]",
-              isBlock ? "md:p-0" : ""
+              isBlock ? "md:p-0" : "",
             )}
           >
             {children}

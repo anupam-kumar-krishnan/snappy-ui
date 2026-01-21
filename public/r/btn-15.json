@@ -1,0 +1,18 @@
+{
+  "name": "btn-15",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "type": "registry:component",
+      "content": "import { Button } from \"@/components/ui/button\";\r\nimport { cn } from \"@/lib/utils\";\r\nimport { ArrowUpRight } from \"lucide-react\";\r\n\r\ninterface Btn15Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {\r\n  label?: string;\r\n}\r\n\r\nexport default function Btn15({\r\n  className,\r\n  label = \"Explore Components\",\r\n  ...props\r\n}: Btn15Props) {\r\n  return (\r\n    <Button\r\n      className={cn(\r\n        \"relative h-10 px-4 overflow-hidden\",\r\n        \"bg-zinc-900 dark:bg-zinc-100\",\r\n        \"transition-all duration-200\",\r\n        \"group\",\r\n        className\r\n      )}\r\n      {...props}\r\n    >\r\n      {/* Gradient background effect */}\r\n      <div\r\n        className={cn(\r\n          \"absolute inset-0\",\r\n          \"bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500\",\r\n          \"opacity-40 group-hover:opacity-95\",\r\n          \"blur-[2.5px] transition-opacity duration-500\"\r\n        )}\r\n      />\r\n\r\n      {/* Content */}\r\n      <div className=\"relative flex items-center justify-center gap-2\">\r\n        <span className=\"text-white dark:text-zinc-900\">{label}</span>\r\n        <ArrowUpRight className=\"w-3.5 h-3.5 text-white/90 dark:text-zinc-900/90\" />\r\n      </div>\r\n    </Button>\r\n  );\r\n}\r\n",
+      "path": "/components/snappyui/buttons/btn-15.tsx",
+      "target": "/components/snappyui/btn-15.tsx"
+    }
+  ]
+}

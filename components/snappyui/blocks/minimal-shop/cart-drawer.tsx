@@ -78,7 +78,7 @@ export function CartDrawer({
           <div className="p-4 border-t border-zinc-200 dark:border-zinc-800">
             <div className="flex justify-between mb-4">
               <span className="text-base">Total</span>
-              <span className="text-base font-medium">${total}</span>
+              <span className="text-base font-medium">₹{total}</span>
             </div>
             <button className="w-full py-3 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 text-base font-medium rounded-lg hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-colors">
               Checkout

@@ -1,0 +1,18 @@
+{
+  "name": "btn-14",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "type": "registry:component",
+      "content": "import { Button } from \"@/components/ui/button\";\r\nimport { cn } from \"@/lib/utils\";\r\nimport { ArrowRight, ArrowUpRight } from \"lucide-react\";\r\n\r\ninterface Btn14Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {\r\n  label?: string;\r\n  className?: string;\r\n}\r\n\r\nexport default function Btn14({\r\n  label = \"Submit\",\r\n  className,\r\n  ...props\r\n}: Btn14Props) {\r\n  return (\r\n    <Button\r\n      variant=\"ghost\"\r\n      className={cn(\r\n        \"group relative w-1/2 h-8 px-3 rounded-lg overflow-hidden transition-all duration-500\",\r\n        className\r\n      )}\r\n      {...props}\r\n    >\r\n      {/* Gradient border using pseudo-element */}\r\n      <div className=\"absolute inset-0 rounded-lg p-[1px] bg-linear-to-b from-[#C76A1B] via-[#E67B1F] dark:via-[#2A1710] to-[#943F00]\">\r\n        <div className=\"absolute inset-0 bg-[#FFF8F3] dark:bg-[#1F1008] rounded-lg opacity-80\" />\r\n      </div>\r\n\r\n      {/* Base background */}\r\n      <div className=\"absolute inset-[1px] bg-[#FFF8F3] dark:bg-[#1F1008] rounded-lg opacity-85\" />\r\n\r\n      {/* Multiple gradient layers */}\r\n      <div className=\"absolute inset-[1px] bg-linear-to-r from-[#FFF8F3] via-[#FFE6D4] to-[#FFF8F3] dark:from-[#1F1008] dark:via-[#261409] dark:to-[#1F1008] rounded-lg opacity-90\" />\r\n      <div className=\"absolute inset-[1px] bg-linear-to-b from-[#E67B1F]/30 via-[#FFE6D4] to-[#943F00]/30 dark:from-[#E67B1F]/40 dark:via-[#2A1710] dark:to-[#943F00]/30 rounded-lg opacity-90\" />\r\n      <div className=\"absolute inset-[1px] bg-linear-to-br from-[#FFB067]/20 via-[#FFE6D4] to-[#3D1D07]/30 dark:from-[#FFB067]/10 dark:via-[#2A1710] dark:to-[#3D1D07]/50 rounded-lg\" />\r\n\r\n      {/* Content wrapper */}\r\n      <div className=\"relative flex items-center justify-center gap-2\">\r\n        <span className=\"text-base bg-linear-to-b from-[#C76A1B] to-[#943F00] dark:from-[#FFC69D] dark:to-[#FF9838] bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(255,176,103,0.4)] tracking-tight\">\r\n          {label}\r\n        </span>\r\n        <ArrowUpRight className=\"w-4 h-4 text-[#C76A1B] dark:text-[#FFC69D]\" />\r\n      </div>\r\n\r\n      {/* Hover effects */}\r\n      <div className=\"absolute inset-[1px] opacity-0 transition-opacity duration-300 bg-linear-to-r from-[#3D1D07]/20 via-[#FFB067]/10 to-[#3D1D07]/20 dark:from-[#3D1D07]/20 dark:via-[#FFB067]/10 dark:to-[#3D1D07]/20 group-hover:opacity-100 rounded-lg\" />\r\n    </Button>\r\n  );\r\n}\r\n",
+      "path": "/components/snappyui/buttons/btn-14.tsx",
+      "target": "/components/snappyui/btn-14.tsx"
+    }
+  ]
+}

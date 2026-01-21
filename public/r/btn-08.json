@@ -1,0 +1,18 @@
+{
+  "name": "btn-08",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "type": "registry:component",
+      "content": "\"use client\";\r\n\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { cn } from \"@/lib/utils\";\r\nimport { useState } from \"react\";\r\nimport { Twitter, Facebook, Linkedin, Link } from \"lucide-react\";\r\n\r\nexport default function Btn08({\r\n  className,\r\n  ...props\r\n}: React.ButtonHTMLAttributes<HTMLButtonElement>) {\r\n  const [isHovered, setIsHovered] = useState(false);\r\n  const shareButtons = [\r\n    { icon: Twitter },\r\n    { icon: Facebook },\r\n    { icon: Linkedin },\r\n    { icon: Link },\r\n  ];\r\n\r\n  return (\r\n    <div\r\n      className=\"relative\"\r\n      onMouseEnter={() => setIsHovered(true)}\r\n      onMouseLeave={() => setIsHovered(false)}\r\n    >\r\n      <Button\r\n        className={cn(\r\n          \"min-w-40 relative\",\r\n          \"bg-white dark:bg-black\",\r\n          \"hover:bg-gray-50 dark:hover:bg-gray-950\",\r\n          \"text-black dark:text-white\",\r\n          \"border border-black/10 dark:border-white/10\",\r\n          \"transition-all duration-300\",\r\n          isHovered ? \"opacity-0\" : \"opacity-100\",\r\n          className\r\n        )}\r\n        {...props}\r\n      >\r\n        <span className=\"flex items-center gap-2\">\r\n          <Link className=\"w-4 h-4\" />\r\n          Share\r\n        </span>\r\n      </Button>\r\n\r\n      <div className=\"absolute top-0 left-0 flex h-10\">\r\n        {shareButtons.map((button, index) => (\r\n          <button\r\n            type=\"button\"\r\n            key={index}\r\n            className={cn(\r\n              \"h-10\",\r\n              \"w-10\",\r\n              \"flex items-center justify-center\",\r\n              \"bg-black dark:bg-white\",\r\n              \"text-white dark:text-black\",\r\n              \"transition-all duration-300\",\r\n              index === 0 && \"rounded-l-md\",\r\n              index === 3 && \"rounded-r-md\",\r\n              \"border-r border-white/10 dark:border-black/10 last:border-r-0\",\r\n              \"hover:bg-gray-900 dark:hover:bg-gray-100\",\r\n              \"transform\",\r\n              isHovered\r\n                ? \"translate-x-[0%] opacity-100\"\r\n                : \"translate-x-[-100%] opacity-0\",\r\n              index === 0 && \"transition-all duration-200\",\r\n              index === 1 && \"transition-all duration-200 delay-[50ms]\",\r\n              index === 2 && \"transition-all duration-200 delay-100\",\r\n              index === 3 && \"transition-all duration-200 delay-150\"\r\n            )}\r\n          >\r\n            <button.icon className=\"w-4 h-4\" />\r\n          </button>\r\n        ))}\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "path": "/components/snappyui/buttons/btn-08.tsx",
+      "target": "/components/snappyui/btn-08.tsx"
+    }
+  ]
+}

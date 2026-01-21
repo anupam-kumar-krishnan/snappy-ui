@@ -34,6 +34,112 @@ export const block: Registry = [
     ],
   },
   {
+    name: "dashboard",
+    type: "registry:block",
+    dependencies: ["lucide-react"],
+    registryDependencies: [
+      "button",
+      "input",
+      "select",
+      "textarea",
+      "dropdown-menu",
+    ],
+    files: [
+      {
+        path: "components/snappyui/blocks/dashboard/dashboard.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "components/snappyui/blocks/dashboard/layout.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "components/snappyui/blocks/dashboard/top-nav.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "components/snappyui/blocks/dashboard/sidebar.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "components/snappyui/blocks/dashboard/content.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "components/snappyui/blocks/dashboard/profile-01.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "components/snappyui/blocks/dashboard/list-03.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "components/snappyui/blocks/dashboard/list-01.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "components/snappyui/blocks/dashboard/list-02.tsx",
+        type: "registry:component",
+      },
+    ],
+  },
+  {
+    name: "minimal-shop",
+    type: "registry:block",
+    dependencies: ["lucide-react", "motion"],
+    registryDependencies: ["button", "input", "select", "textarea"],
+    files: [
+      {
+        path: "components/snappyui/blocks/minimal-shop/minimal-shop.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "components/snappyui/blocks/minimal-shop/top-bar.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "components/snappyui/blocks/minimal-shop/product-grid.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "components/snappyui/blocks/minimal-shop/product-modal.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "components/snappyui/blocks/minimal-shop/cart-drawer.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "components/snappyui/blocks/minimal-shop/data.ts",
+        type: "registry:component",
+      },
+      {
+        path: "components/snappyui/blocks/minimal-shop/header.tsx",
+        type: "registry:component",
+      },
+    ],
+  },
+  {
+    name: "auth-basic",
+    type: "registry:block",
+    dependencies: ["lucide-react"],
+    registryDependencies: ["button", "input", "separator"],
+    files: [
+      {
+        path: "components/snappyui/blocks/auth-basic/auth-basic.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "components/snappyui/blocks/auth-basic/auth-form.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "components/snappyui/blocks/auth-basic/social-login.tsx",
+        type: "registry:component",
+      },
+    ],
+  },
+  {
     name: "ai-chat",
     type: "registry:block",
     dependencies: ["lucide-react", "motion"],

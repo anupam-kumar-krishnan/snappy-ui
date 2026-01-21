@@ -1,0 +1,16 @@
+{
+  "name": "alert-05",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "type": "registry:component",
+      "content": "\"use client\";\r\n\r\nimport { cn } from \"@/lib/utils\";\r\nimport { motion } from \"motion/react\";\r\nimport { IndianRupee } from \"lucide-react\";\r\n\r\nexport default function Alert05() {\r\n  return (\r\n    <motion.div\r\n      initial={{ opacity: 0, y: -8 }}\r\n      animate={{ opacity: 1, y: 0 }}\r\n      className=\"w-full max-w-md mx-auto\"\r\n    >\r\n      <div\r\n        className={cn(\r\n          \"relative overflow-hidden\",\r\n          \"bg-linear-to-br from-indigo-50 to-violet-50 dark:from-indigo-950/50 dark:to-violet-950/50\",\r\n          \"border border-indigo-200 dark:border-indigo-800/50\",\r\n          \"shadow-lg\",\r\n          \"p-6 rounded-2xl\"\r\n        )}\r\n      >\r\n        <div className=\"flex items-start gap-4\">\r\n          <motion.div\r\n            initial={{ scale: 0.5 }}\r\n            animate={{ scale: 1 }}\r\n            className=\"shrink-0\"\r\n          >\r\n            <div\r\n              className={cn(\r\n                \"w-12 h-12 rounded-2xl rotate-3\",\r\n                \"bg-linear-to-br from-indigo-500 to-violet-500\",\r\n                \"flex items-center justify-center\",\r\n                \"shadow-lg shadow-indigo-500/20\"\r\n              )}\r\n            >\r\n              <IndianRupee className=\"h-6 w-6 text-white\" />\r\n            </div>\r\n          </motion.div>\r\n\r\n          <div className=\"flex-1 min-w-0\">\r\n            <motion.div\r\n              initial={{ opacity: 0, x: 10 }}\r\n              animate={{ opacity: 1, x: 0 }}\r\n              transition={{ duration: 0.3 }}\r\n              className=\"space-y-2\"\r\n            >\r\n              <div className=\"flex flex-col gap-1\">\r\n                <div className=\"flex items-center justify-between\">\r\n                  <h3 className=\"text-lg font-semibold text-indigo-950 dark:text-indigo-100\">\r\n                    Payment Received\r\n                  </h3>\r\n                  <span className=\"px-2.5 py-1 rounded-full text-sm font-semibold bg-white/80 dark:bg-white/10 text-indigo-600 dark:text-indigo-300 backdrop-blur-xs\">\r\n                    ₹40,000.00\r\n                  </span>\r\n                </div>\r\n                <p className=\"text-sm text-indigo-700 dark:text-indigo-300\">\r\n                  The payment has been processed and added to your account\r\n                </p>\r\n              </div>\r\n            </motion.div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </motion.div>\r\n  );\r\n}\r\n",
+      "path": "/components/snappyui/alert/alert-05.tsx",
+      "target": "/components/snappyui/alert-05.tsx"
+    }
+  ]
+}

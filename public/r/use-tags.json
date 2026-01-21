@@ -1,0 +1,12 @@
+{
+  "name": "use-tags",
+  "type": "registry:hook",
+  "files": [
+    {
+      "type": "registry:hook",
+      "content": "import { useState } from \"react\";\r\n\r\ninterface Tag {\r\n  id: string;\r\n  label: string;\r\n  color?: string;\r\n}\r\n\r\ninterface UseTagsProps {\r\n  onChange?: (tags: Tag[]) => void;\r\n  defaultTags?: Tag[];\r\n  maxTags?: number;\r\n  defaultColors?: string[];\r\n}\r\n\r\nexport function useTags({\r\n  onChange,\r\n  defaultTags = [],\r\n  maxTags = 10,\r\n  defaultColors = [\r\n    \"bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300\",\r\n    \"bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300\",\r\n    \"bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300\",\r\n    \"bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-300\",\r\n    \"bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300\",\r\n  ],\r\n}: UseTagsProps = {}) {\r\n  const [tags, setTags] = useState<Tag[]>(defaultTags);\r\n\r\n  function addTag(tag: Tag) {\r\n    if (tags.length >= maxTags) return;\r\n\r\n    const newTags = [\r\n      ...tags,\r\n      {\r\n        ...tag,\r\n        color: tag.color || defaultColors[tags.length % defaultColors.length],\r\n      },\r\n    ];\r\n    setTags(newTags);\r\n    onChange?.(newTags);\r\n    return newTags;\r\n  }\r\n\r\n  function removeTag(tagId: string) {\r\n    const newTags = tags.filter((t) => t.id !== tagId);\r\n    setTags(newTags);\r\n    onChange?.(newTags);\r\n    return newTags;\r\n  }\r\n\r\n  function removeLastTag() {\r\n    if (tags.length === 0) return;\r\n    return removeTag(tags[tags.length - 1].id);\r\n  }\r\n\r\n  return {\r\n    tags,\r\n    setTags,\r\n    addTag,\r\n    removeTag,\r\n    removeLastTag,\r\n    hasReachedMax: tags.length >= maxTags,\r\n  };\r\n}\r\n",
+      "path": "/hooks/use-tags.ts",
+      "target": "/hooks/use-tags.ts"
+    }
+  ]
+}

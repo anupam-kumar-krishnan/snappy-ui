@@ -54,10 +54,10 @@ export const products: Product[] = [
     id: "p5",
     name: "Concrete Planter",
     description: "Minimalist concrete planter perfect for succulents.",
-    price: 34,
+    price: 800,
     image:
       "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    category: "800",
+    category: "Plants",
   },
   {
     id: "p6",

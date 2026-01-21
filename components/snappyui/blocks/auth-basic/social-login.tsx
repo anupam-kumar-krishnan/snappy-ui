@@ -67,7 +67,7 @@ export function SocialLogin() {
         ) : (
           <GoogleIcon />
         )}
-        {isGoogleLoading ? "Connecting..." : "Sign in with Google"}
+        {isGoogleLoading ? "Connecting..." : "Sign In with Google"}
       </Button>
     </>
   );

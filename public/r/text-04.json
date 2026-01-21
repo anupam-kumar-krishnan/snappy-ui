@@ -1,0 +1,15 @@
+{
+  "name": "text-04",
+  "type": "registry:component",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "type": "registry:component",
+      "content": "\"use client\";\r\n\r\nimport { cn } from \"@/lib/utils\";\r\nimport { motion } from \"motion/react\";\r\n\r\ninterface AnimatedTextProps {\r\n  text?: string;\r\n  className?: string;\r\n  shadowColors?: {\r\n    first?: string;\r\n    second?: string;\r\n    third?: string;\r\n    fourth?: string;\r\n    glow?: string;\r\n  };\r\n}\r\n\r\nexport default function Text_04({\r\n  text = \"LINE\",\r\n  className = \"\",\r\n  shadowColors = {\r\n    first: \"#07bccc\",\r\n    second: \"#e601c0\",\r\n    third: \"#e9019a\",\r\n    fourth: \"#f40468\",\r\n    glow: \"#f40468\",\r\n  },\r\n}: AnimatedTextProps) {\r\n  const textShadowStyle = {\r\n    textShadow: `10px 10px 0px ${shadowColors.first}, \r\n                     15px 15px 0px ${shadowColors.second}, \r\n                     20px 20px 0px ${shadowColors.third}, \r\n                     25px 25px 0px ${shadowColors.fourth}, \r\n                     45px 45px 10px ${shadowColors.glow}`,\r\n  };\r\n\r\n  const noShadowStyle = {\r\n    textShadow: \"none\",\r\n  };\r\n\r\n  return (\r\n    <div className=\"w-full text-center\">\r\n      <motion.div\r\n        className={cn(\r\n          \"w-full text-center cursor-pointer text-3xl font-bold\",\r\n          \"transition-all duration-200 ease-in-out tracking-widest\",\r\n          \"text-black dark:text-white italic\",\r\n          \"stroke-[#d6f4f4]\",\r\n          className\r\n        )}\r\n        style={textShadowStyle}\r\n        whileHover={noShadowStyle}\r\n      >\r\n        {text}\r\n      </motion.div>\r\n    </div>\r\n  );\r\n}\r\n",
+      "path": "/components/snappyui/text/text-04.tsx",
+      "target": "/components/snappyui/text-04.tsx"
+    }
+  ]
+}

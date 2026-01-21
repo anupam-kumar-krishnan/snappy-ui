@@ -280,7 +280,7 @@ export const component: Registry = [
     registryDependencies: ["button"],
     files: [
       {
-        path: "components/snappyui/button/btn-01.tsx",
+        path: "components/snappyui/buttons/btn-01.tsx",
         type: "registry:component",
       },
     ],
@@ -291,7 +291,7 @@ export const component: Registry = [
     registryDependencies: ["button"],
     files: [
       {
-        path: "components/snappyui/button/btn-02.tsx",
+        path: "components/snappyui/buttons/btn-02.tsx",
         type: "registry:component",
       },
     ],
@@ -303,7 +303,7 @@ export const component: Registry = [
     registryDependencies: ["button"],
     files: [
       {
-        path: "components/snappyui/button/btn-03.tsx",
+        path: "components/snappyui/buttons/btn-03.tsx",
         type: "registry:component",
       },
     ],
@@ -315,7 +315,7 @@ export const component: Registry = [
     registryDependencies: ["button"],
     files: [
       {
-        path: "components/snappyui/button/btn-04.tsx",
+        path: "components/snappyui/buttons/btn-04.tsx",
         type: "registry:component",
       },
     ],
@@ -327,7 +327,7 @@ export const component: Registry = [
     registryDependencies: ["button"],
     files: [
       {
-        path: "components/snappyui/button/btn-05.tsx",
+        path: "components/snappyui/buttons/btn-05.tsx",
         type: "registry:component",
       },
     ],
@@ -339,7 +339,7 @@ export const component: Registry = [
     registryDependencies: ["button"],
     files: [
       {
-        path: "components/snappyui/button/btn-06.tsx",
+        path: "components/snappyui/buttons/btn-06.tsx",
         type: "registry:component",
       },
       {
@@ -355,7 +355,7 @@ export const component: Registry = [
     registryDependencies: ["button"],
     files: [
       {
-        path: "components/snappyui/button/btn-07.tsx",
+        path: "components/snappyui/buttons/btn-07.tsx",
         type: "registry:component",
       },
     ],
@@ -367,7 +367,7 @@ export const component: Registry = [
     registryDependencies: ["button"],
     files: [
       {
-        path: "components/snappyui/button/btn-08.tsx",
+        path: "components/snappyui/buttons/btn-08.tsx",
         type: "registry:component",
       },
     ],
@@ -379,7 +379,7 @@ export const component: Registry = [
     registryDependencies: ["button"],
     files: [
       {
-        path: "components/snappyui/button/btn-09.tsx",
+        path: "components/snappyui/buttons/btn-09.tsx",
         type: "registry:component",
       },
     ],
@@ -391,7 +391,7 @@ export const component: Registry = [
     registryDependencies: ["button"],
     files: [
       {
-        path: "components/snappyui/button/btn-10.tsx",
+        path: "components/snappyui/buttons/btn-10.tsx",
         type: "registry:component",
       },
     ],
@@ -403,7 +403,7 @@ export const component: Registry = [
     registryDependencies: ["button"],
     files: [
       {
-        path: "components/snappyui/button/btn-11.tsx",
+        path: "components/snappyui/buttons/btn-11.tsx",
         type: "registry:component",
       },
     ],
@@ -415,7 +415,7 @@ export const component: Registry = [
     registryDependencies: ["button"],
     files: [
       {
-        path: "components/snappyui/button/btn-12.tsx",
+        path: "components/snappyui/buttons/btn-12.tsx",
         type: "registry:component",
       },
     ],
@@ -427,7 +427,19 @@ export const component: Registry = [
     registryDependencies: ["button"],
     files: [
       {
-        path: "components/snappyui/button/btn-13.tsx",
+        path: "components/snappyui/buttons/btn-13.tsx",
+        type: "registry:component",
+      },
+    ],
+  },
+  {
+    name: "btn-14",
+    type: "registry:component",
+    dependencies: ["lucide-react"],
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "components/snappyui/buttons/btn-14.tsx",
         type: "registry:component",
       },
     ],
@@ -439,7 +451,7 @@ export const component: Registry = [
     registryDependencies: ["button"],
     files: [
       {
-        path: "components/snappyui/button/btn-15.tsx",
+        path: "components/snappyui/buttons/btn-15.tsx",
         type: "registry:component",
       },
     ],
@@ -1082,18 +1094,6 @@ export const component: Registry = [
     ],
   },
   {
-    name: "checkout-interaction",
-    type: "registry:component",
-    dependencies: ["lucide-react", "motion", "@number-flow/react"],
-    registryDependencies: ["button"],
-    files: [
-      {
-        path: "components/snappyui/checkout-interaction.tsx",
-        type: "registry:component",
-      },
-    ],
-  },
-  {
     name: "particle-button",
     type: "registry:component",
     dependencies: ["lucide-react", "motion"],
@@ -1166,6 +1166,30 @@ export const component: Registry = [
       {
         path: "hooks/use-debounce.ts",
         type: "registry:hook",
+      },
+    ],
+  },
+  {
+    name: "apple-activity-card",
+    type: "registry:component",
+    dependencies: ["lucide-react"],
+    registryDependencies: [],
+    files: [
+      {
+        path: "components/snappyui/apple-activity-card.tsx",
+        type: "registry:component",
+      },
+    ],
+  },
+  {
+    name: "mouse-effect-card",
+    type: "registry:component",
+    dependencies: ["lucide-react"],
+    registryDependencies: [],
+    files: [
+      {
+        path: "components/snappyui/mouse-effect-card.tsx",
+        type: "registry:component",
       },
     ],
   },

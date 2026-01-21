@@ -1,0 +1,19 @@
+{
+  "name": "btn-04",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "type": "registry:component",
+      "content": "\"use client\";\r\n\r\nimport { cn } from \"@/lib/utils\";\r\nimport { motion, useAnimation } from \"motion/react\";\r\nimport { Zap } from \"lucide-react\";\r\nimport { useState } from \"react\";\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\ninterface Btn04Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {\r\n  onPowerUp?: () => void;\r\n  chargeDuration?: number;\r\n}\r\n\r\nexport default function Btn04({\r\n  className,\r\n  onPowerUp,\r\n  chargeDuration = 2000,\r\n  ...props\r\n}: Btn04Props) {\r\n  const [isCharging, setIsCharging] = useState(false);\r\n  const particleControls = useAnimation();\r\n  const chargeControls = useAnimation();\r\n\r\n  async function handleStart() {\r\n    setIsCharging(true);\r\n    chargeControls.set({ height: \"100%\", y: \"100%\" });\r\n    await chargeControls.start({\r\n      y: \"0%\",\r\n      transition: {\r\n        duration: chargeDuration / 1000,\r\n        ease: \"easeOut\",\r\n      },\r\n    });\r\n\r\n    await particleControls.start({\r\n      scale: [1, 1.5],\r\n      opacity: [1, 0],\r\n      transition: { duration: 0.3 },\r\n    });\r\n\r\n    onPowerUp?.();\r\n  }\r\n\r\n  function handleEnd() {\r\n    setIsCharging(false);\r\n    chargeControls.stop();\r\n    chargeControls.start({\r\n      y: \"100%\",\r\n      transition: { duration: 0.2 },\r\n    });\r\n  }\r\n\r\n  return (\r\n    <Button\r\n      className={cn(\r\n        \"min-w-[120px] sm:min-w-40 relative overflow-hidden\",\r\n        \"bg-indigo-100 dark:bg-indigo-900\",\r\n        \"hover:bg-indigo-200 dark:hover:bg-indigo-800\",\r\n        \"text-indigo-900 dark:text-indigo-300\",\r\n        \"border border-indigo-300 dark:border-indigo-700\",\r\n        \"transition-colors duration-300\",\r\n        \"touch-none\",\r\n        className\r\n      )}\r\n      onMouseDown={handleStart}\r\n      onMouseUp={handleEnd}\r\n      onMouseLeave={handleEnd}\r\n      onTouchStart={handleStart}\r\n      onTouchEnd={handleEnd}\r\n      onTouchCancel={handleEnd}\r\n      {...props}\r\n    >\r\n      <motion.div\r\n        initial={{ height: \"100%\", y: \"100%\" }}\r\n        animate={chargeControls}\r\n        className={cn(\r\n          \"absolute left-0 bottom-0 w-full\",\r\n          \"bg-linear-to-t from-indigo-400 to-indigo-300\",\r\n          \"dark:from-indigo-500 dark:to-indigo-400\",\r\n          \"opacity-50\"\r\n        )}\r\n      />\r\n      <motion.div\r\n        initial={{ scale: 0, opacity: 0 }}\r\n        animate={particleControls}\r\n        className={cn(\r\n          \"absolute inset-0\",\r\n          \"bg-indigo-200 dark:bg-indigo-400\",\r\n          \"rounded-full\"\r\n        )}\r\n      />\r\n      <span className=\"relative z-10 w-full flex items-center justify-center gap-2\">\r\n        <Zap\r\n          className={cn(\r\n            \"w-4 h-4 transition-transform\",\r\n            isCharging && \"animate-bounce\"\r\n          )}\r\n        />\r\n        {!isCharging ? \"Power Up!\" : \"Charging...\"}\r\n      </span>\r\n    </Button>\r\n  );\r\n}\r\n",
+      "path": "/components/snappyui/buttons/btn-04.tsx",
+      "target": "/components/snappyui/btn-04.tsx"
+    }
+  ]
+}

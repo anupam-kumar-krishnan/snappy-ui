@@ -1,0 +1,18 @@
+{
+  "name": "btn-11",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "type": "registry:component",
+      "content": "import { Button } from \"@/components/ui/button\";\r\nimport { cn } from \"@/lib/utils\";\r\nimport { ChevronRight } from \"lucide-react\";\r\n\r\ninterface Btn11Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {\r\n  children?: React.ReactNode;\r\n  showIcon?: boolean;\r\n}\r\n\r\nexport default function Btn11({\r\n  className,\r\n  children = \"Button\",\r\n  showIcon = true,\r\n  ...props\r\n}: Btn11Props) {\r\n  return (\r\n    <Button\r\n      className={cn(\r\n        \"relative h-10 px-4\",\r\n        \"bg-linear-to-b from-zinc-50 to-zinc-100/80\",\r\n        \"dark:from-zinc-900 dark:to-zinc-800/80\",\r\n        \"text-zinc-800 dark:text-zinc-200\",\r\n        \"border border-zinc-200 dark:border-zinc-800\",\r\n        \"hover:border-zinc-300 dark:hover:border-zinc-700\",\r\n        \"shadow-xs hover:shadow-sm\",\r\n        \"transition-all duration-200\",\r\n        \"group\",\r\n        className\r\n      )}\r\n      {...props}\r\n    >\r\n      <div className=\"flex items-center justify-center gap-2\">\r\n        <span className=\"relative\">\r\n          {children}\r\n          <span\r\n            className={cn(\r\n              \"absolute -bottom-px left-0 w-full h-px\",\r\n              \"bg-linear-to-r from-zinc-400/0 via-zinc-400/50 to-zinc-400/0\",\r\n              \"dark:from-zinc-600/0 dark:via-zinc-600/50 dark:to-zinc-600/0\",\r\n              \"opacity-0 group-hover:opacity-100\",\r\n              \"transition-opacity duration-200\"\r\n            )}\r\n          />\r\n        </span>\r\n        {showIcon && (\r\n          <ChevronRight\r\n            className={cn(\r\n              \"w-4 h-4\",\r\n              \"transform group-hover:translate-x-0.5\",\r\n              \"transition-transform duration-200\"\r\n            )}\r\n          />\r\n        )}\r\n      </div>\r\n    </Button>\r\n  );\r\n}\r\n",
+      "path": "/components/snappyui/buttons/btn-11.tsx",
+      "target": "/components/snappyui/btn-11.tsx"
+    }
+  ]
+}

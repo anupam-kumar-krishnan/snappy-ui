@@ -1,0 +1,15 @@
+{
+  "name": "text-03",
+  "type": "registry:component",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "type": "registry:component",
+      "content": "\"use client\";\r\n\r\nimport { cn } from \"@/lib/utils\";\r\nimport { motion } from \"motion/react\";\r\n\r\ninterface AnimatedTextProps {\r\n  text?: string;\r\n  className?: string;\r\n}\r\n\r\nexport default function Text_03({\r\n  text = \"Hover me\",\r\n  className = \"\",\r\n}: AnimatedTextProps) {\r\n  return (\r\n    <motion.span\r\n      className={cn(\r\n        \"w-full text-center inline-block cursor-pointer text-3xl transition-all\",\r\n        className\r\n      )}\r\n      whileHover=\"hover\"\r\n      initial=\"initial\"\r\n    >\r\n      {text.split(\"\").map((char, index) => (\r\n        <motion.span\r\n          key={index}\r\n          className=\"inline-block\"\r\n          variants={{\r\n            initial: {\r\n              y: 0,\r\n              scale: 1,\r\n            },\r\n            hover: {\r\n              y: -4,\r\n              scale: 1.2,\r\n              transition: {\r\n                type: \"spring\",\r\n                stiffness: 300,\r\n                damping: 15,\r\n                delay: index * 0.03,\r\n              },\r\n            },\r\n          }}\r\n        >\r\n          {char}\r\n        </motion.span>\r\n      ))}\r\n    </motion.span>\r\n  );\r\n}\r\n",
+      "path": "/components/snappyui/text/text-03.tsx",
+      "target": "/components/snappyui/text-03.tsx"
+    }
+  ]
+}

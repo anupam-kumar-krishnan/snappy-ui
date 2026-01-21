@@ -1,0 +1,25 @@
+{
+  "name": "btn-06",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "type": "registry:component",
+      "content": "\"use client\";\r\n\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { cn } from \"@/lib/utils\";\r\nimport { Check, Copy } from \"lucide-react\";\r\nimport { useState } from \"react\";\r\n\r\ninterface Btn06Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {\r\n  textToCopy: string;\r\n  successDuration?: number;\r\n}\r\n\r\nexport default function Btn06({\r\n  className,\r\n  textToCopy = \"https://ui.codesnipet.dev/\",\r\n  successDuration = 1000,\r\n  ...props\r\n}: Btn06Props) {\r\n  const [isCopied, setIsCopied] = useState(false);\r\n\r\n  async function handleCopy() {\r\n    try {\r\n      await navigator.clipboard.writeText(textToCopy);\r\n      setIsCopied(true);\r\n      setTimeout(() => setIsCopied(false), successDuration);\r\n    } catch (err) {\r\n      console.error(\"Failed to copy text:\", err);\r\n    }\r\n  }\r\n\r\n  return (\r\n    <Button\r\n      className={cn(\r\n        \"min-w-40 relative group\",\r\n        \"bg-emerald-50 dark:bg-emerald-950\",\r\n        \"hover:bg-emerald-100 dark:hover:bg-emerald-900\",\r\n        \"text-emerald-600 dark:text-emerald-300\",\r\n        \"border border-emerald-200 dark:border-emerald-800\",\r\n        isCopied && \"bg-emerald-100 dark:bg-emerald-900\",\r\n        className\r\n      )}\r\n      onClick={handleCopy}\r\n      {...props}\r\n    >\r\n      <div\r\n        className={cn(\r\n          \"w-full flex items-center justify-center gap-2\",\r\n          \"transition-transform duration-200\",\r\n          isCopied && \"scale-105\"\r\n        )}\r\n      >\r\n        {isCopied ? (\r\n          <>\r\n            <Check className=\"w-4 h-4 text-emerald-500\" />\r\n            <span>Copied!</span>\r\n          </>\r\n        ) : (\r\n          <>\r\n            <Copy\r\n              className={cn(\r\n                \"w-4 h-4 transition-transform duration-200\",\r\n                \"group-hover:scale-110\"\r\n              )}\r\n            />\r\n            <span>Copy code</span>\r\n          </>\r\n        )}\r\n      </div>\r\n    </Button>\r\n  );\r\n}\r\n",
+      "path": "/components/snappyui/buttons/btn-06.tsx",
+      "target": "/components/snappyui/btn-06.tsx"
+    },
+    {
+      "type": "registry:hook",
+      "content": "import * as React from \"react\";\r\n\r\nexport function useCopyToClipboard({\r\n  timeout = 2000,\r\n  onCopy,\r\n}: {\r\n  timeout?: number;\r\n  onCopy?: () => void;\r\n} = {}) {\r\n  const [isCopied, setIsCopied] = React.useState(false);\r\n\r\n  const copyToClipboard = (value: string) => {\r\n    if (typeof window === \"undefined\" || !navigator.clipboard.writeText) {\r\n      return;\r\n    }\r\n\r\n    if (!value) return;\r\n\r\n    navigator.clipboard.writeText(value).then(() => {\r\n      setIsCopied(true);\r\n\r\n      if (onCopy) {\r\n        onCopy();\r\n      }\r\n\r\n      setTimeout(() => {\r\n        setIsCopied(false);\r\n      }, timeout);\r\n    }, console.error);\r\n  };\r\n\r\n  return { isCopied, copyToClipboard };\r\n}\r\n",
+      "path": "/hooks/use-copy-to-clipboard.ts",
+      "target": "/hooks/use-copy-to-clipboard.ts"
+    }
+  ]
+}

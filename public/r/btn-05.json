@@ -1,0 +1,19 @@
+{
+  "name": "btn-05",
+  "type": "registry:component",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "type": "registry:component",
+      "content": "\"use client\";\r\n\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { cn } from \"@/lib/utils\";\r\nimport { motion, useAnimation } from \"motion/react\";\r\nimport { Trash2Icon } from \"lucide-react\";\r\nimport { useState } from \"react\";\r\n\r\ninterface Btn_05Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {\r\n  holdDuration?: number;\r\n}\r\n\r\nexport default function Btn_05({\r\n  className,\r\n  holdDuration = 3000,\r\n  ...props\r\n}: Btn_05Props) {\r\n  const [isHolding, setIsHolding] = useState(false);\r\n  const controls = useAnimation();\r\n\r\n  async function handleHoldStart() {\r\n    setIsHolding(true);\r\n    controls.set({ width: \"0%\" });\r\n    await controls.start({\r\n      width: \"100%\",\r\n      transition: {\r\n        duration: holdDuration / 1000,\r\n        ease: \"linear\",\r\n      },\r\n    });\r\n  }\r\n\r\n  function handleHoldEnd() {\r\n    setIsHolding(false);\r\n    controls.stop();\r\n    controls.start({\r\n      width: \"0%\",\r\n      transition: { duration: 0.1 },\r\n    });\r\n  }\r\n\r\n  return (\r\n    <Button\r\n      className={cn(\r\n        \"min-w-40 relative overflow-hidden touch-none\",\r\n        \"bg-red-100 dark:bg-red-200\",\r\n        \"hover:bg-red-100 dark:hover:bg-red-200\",\r\n        \"text-red-500 dark:text-red-600\",\r\n        \"border border-red-200 dark:border-red-300\",\r\n        className\r\n      )}\r\n      onMouseDown={handleHoldStart}\r\n      onMouseUp={handleHoldEnd}\r\n      onMouseLeave={handleHoldEnd}\r\n      onTouchStart={handleHoldStart}\r\n      onTouchEnd={handleHoldEnd}\r\n      onTouchCancel={handleHoldEnd}\r\n      {...props}\r\n    >\r\n      <motion.div\r\n        initial={{ width: \"0%\" }}\r\n        animate={controls}\r\n        className={cn(\r\n          \"absolute left-0 top-0 h-full\",\r\n          \"bg-red-200/30\",\r\n          \"dark:bg-red-300/30\"\r\n        )}\r\n      />\r\n      <span className=\"relative z-10 w-full flex items-center justify-center gap-2\">\r\n        <Trash2Icon className=\"w-4 h-4\" />\r\n        {!isHolding ? \"Hold me\" : \"Release\"}\r\n      </span>\r\n    </Button>\r\n  );\r\n}\r\n",
+      "path": "/components/snappyui/buttons/btn-05.tsx",
+      "target": "/components/snappyui/btn-05.tsx"
+    }
+  ]
+}
