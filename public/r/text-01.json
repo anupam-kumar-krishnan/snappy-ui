@@ -6,8 +6,8 @@
     {
       "type": "registry:component",
       "content": "export default function Text_01() {\r\n  return (\r\n    <div className=\"flex items-center justify-center\">\r\n      <div className=\"relative px-4 py-2 overflow-hidden\">\r\n        <h1 className=\"text-4xl sm:text-3xl font-bold shimmer-text\">\r\n          Snappy UI\r\n        </h1>\r\n      </div>\r\n      <style>{`\r\n                .shimmer-text {\r\n                    --shimmer-color-start: #334155;\r\n                    --shimmer-color-mid: #94a3b8;\r\n                    background: linear-gradient(\r\n                        90deg,\r\n                        var(--shimmer-color-start) 0%,\r\n                        var(--shimmer-color-start) 40%,\r\n                        var(--shimmer-color-mid) 50%,\r\n                        var(--shimmer-color-start) 60%,\r\n                        var(--shimmer-color-start) 100%\r\n                    );\r\n                    background-size: 200% 100%;\r\n                    -webkit-background-clip: text;\r\n                    background-clip: text;\r\n                    color: transparent;\r\n                    animation: shimmer 2.5s infinite linear;\r\n                }\r\n\r\n                @media (prefers-color-scheme: dark) {\r\n                    .shimmer-text {\r\n                        --shimmer-color-start: #f1f5f9;\r\n                        --shimmer-color-mid: #9333EA;\r\n                    }\r\n                }\r\n\r\n                @keyframes shimmer {\r\n                    0% { background-position: 100% 0; }\r\n                    100% { background-position: -100% 0; }\r\n                }\r\n            `}</style>\r\n    </div>\r\n  );\r\n}\r\n",
-      "path": "/components/snappyui/text/text-01.tsx",
-      "target": "/components/snappyui/text-01.tsx"
+      "path": "components/snappyui/text/text-01.tsx",
+      "target": "components/snappyui/text-01.tsx"
     }
   ]
 }

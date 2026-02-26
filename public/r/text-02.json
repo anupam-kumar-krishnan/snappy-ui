@@ -1,15 +1,13 @@
 {
   "name": "text-02",
   "type": "registry:component",
-  "dependencies": [
-    "motion"
-  ],
+  "dependencies": ["motion"],
   "files": [
     {
       "type": "registry:component",
       "content": "\"use client\";\r\n\r\nimport { cn } from \"@/lib/utils\";\r\nimport { motion } from \"motion/react\";\r\n\r\ninterface TextSplitProps {\r\n  text: string;\r\n  className?: string;\r\n  containerClassName?: string;\r\n  splitSpacing?: number;\r\n}\r\n\r\nconst Text_02: React.FC<TextSplitProps> = ({\r\n  text = \"Snappy UI\",\r\n  className = \"\",\r\n  containerClassName = \"\",\r\n  splitSpacing = 2,\r\n}) => {\r\n  return (\r\n    <motion.div\r\n      className={cn(\r\n        \"w-full text-center relative inline-block\",\r\n        containerClassName\r\n      )}\r\n      whileHover=\"hover\"\r\n      initial=\"default\"\r\n    >\r\n      <motion.div\r\n        className={cn(\"absolute w-full text-4xl -ml-0.5\", className)}\r\n        variants={{\r\n          default: {\r\n            clipPath: \"inset(0 0 50% 0)\",\r\n            y: -splitSpacing / 2,\r\n            opacity: 1,\r\n          },\r\n          hover: {\r\n            clipPath: \"inset(0 0 0 0)\",\r\n            y: 0,\r\n            opacity: 0,\r\n          },\r\n        }}\r\n        transition={{ duration: 0.1 }}\r\n      >\r\n        {text}\r\n      </motion.div>\r\n      <motion.div\r\n        className={cn(\"absolute w-full text-4xl\", className)}\r\n        variants={{\r\n          default: {\r\n            clipPath: \"inset(50% 0 0 0)\",\r\n            y: splitSpacing / 2,\r\n            opacity: 1,\r\n          },\r\n          hover: {\r\n            clipPath: \"inset(0 0 0 0)\",\r\n            y: 0,\r\n            opacity: 1,\r\n          },\r\n        }}\r\n        transition={{ duration: 0.1 }}\r\n      >\r\n        {text}\r\n      </motion.div>\r\n\r\n      {/* Hidden text for maintaining layout size */}\r\n      <div className={cn(\"invisible text-4xl\", className)}>{text}</div>\r\n    </motion.div>\r\n  );\r\n};\r\n\r\nexport default Text_02;\r\n",
-      "path": "/components/snappyui/text/text-02.tsx",
-      "target": "/components/snappyui/text-02.tsx"
+      "path": "components/snappyui/text/text-02.tsx",
+      "target": "components/snappyui/text-02.tsx"
     }
   ]
 }

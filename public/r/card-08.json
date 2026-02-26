@@ -1,16 +1,14 @@
 {
   "name": "card-08",
   "type": "registry:component",
-  "dependencies": [
-    "lucide-react"
-  ],
+  "dependencies": ["lucide-react"],
   "registryDependencies": [],
   "files": [
     {
       "type": "registry:component",
       "content": "import { cn } from \"@/lib/utils\";\r\nimport { ArrowUpRight } from \"lucide-react\";\r\nimport Image from \"next/image\";\r\nimport Link from \"next/link\";\r\n\r\ninterface Card08Props {\r\n  title?: string;\r\n  subtitle?: string;\r\n  image?: string;\r\n  badge?: {\r\n    text: string;\r\n    variant: \"pink\" | \"indigo\" | \"orange\";\r\n  };\r\n  href?: string;\r\n}\r\n\r\nexport default function Card08({\r\n  title = \"New UI Design Fundamentals\",\r\n  subtitle = \"Explore the fundamentals of contemporary UI design\",\r\n  image = \"/card-08.png\",\r\n  badge = { text: \"New\", variant: \"indigo\" },\r\n  href = \"#\",\r\n}: Card08Props) {\r\n  return (\r\n    <Link href={href} className=\"block w-full max-w-[280px] group\">\r\n      <div\r\n        className={cn(\r\n          \"relative overflow-hidden rounded-2xl\",\r\n          \"bg-white/80 dark:bg-zinc-900/80\",\r\n          \"backdrop-blur-xl\",\r\n          \"border border-zinc-200/50 dark:border-zinc-800/50\",\r\n          \"shadow-xs\",\r\n          \"transition-all duration-300\",\r\n          \"hover:shadow-md\",\r\n          \"hover:border-zinc-300/50 dark:hover:border-zinc-700/50\"\r\n        )}\r\n      >\r\n        <div className=\"relative h-[320px] overflow-hidden\">\r\n          <Image\r\n            src={image}\r\n            alt={title}\r\n            fill\r\n            sizes=\"(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw\"\r\n            className=\"object-cover\"\r\n          />\r\n        </div>\r\n\r\n        <div\r\n          className={cn(\r\n            \"absolute inset-0\",\r\n            \"bg-linear-to-t from-black/90 via-black/40 to-transparent\"\r\n          )}\r\n        />\r\n\r\n        <div className=\"absolute top-3 right-3\">\r\n          <span\r\n            className={cn(\r\n              \"px-2.5 py-1 rounded-full text-xs font-medium\",\r\n              \"bg-white/90 text-zinc-800\",\r\n              \"dark:bg-zinc-900/90 dark:text-zinc-200\",\r\n              \"backdrop-blur-md\",\r\n              \"shadow-xs\",\r\n              \"border border-white/20 dark:border-zinc-800/50\"\r\n            )}\r\n          >\r\n            {badge.text}\r\n          </span>\r\n        </div>\r\n\r\n        <div className=\"absolute bottom-0 left-0 right-0 p-5\">\r\n          <div className=\"flex items-center justify-between gap-3\">\r\n            <div className=\"space-y-1.5\">\r\n              <h3 className=\"text-lg font-semibold text-white dark:text-zinc-100 leading-snug\">\r\n                {title}\r\n              </h3>\r\n              <p className=\"text-sm text-zinc-200 dark:text-zinc-300 line-clamp-2\">\r\n                {subtitle}\r\n              </p>\r\n            </div>\r\n            <div\r\n              className={cn(\r\n                \"p-2 rounded-full\",\r\n                \"bg-white/10 dark:bg-zinc-800/50\",\r\n                \"backdrop-blur-md\",\r\n                \"group-hover:bg-white/20 dark:group-hover:bg-zinc-700/50\",\r\n                \"transition-colors duration-300 group\"\r\n              )}\r\n            >\r\n              <ArrowUpRight className=\"w-4 h-4 text-white group-hover:-rotate-12 transition-transform duration-300\" />\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </Link>\r\n  );\r\n}\r\n",
-      "path": "/components/snappyui/card/card-08.tsx",
-      "target": "/components/snappyui/card-08.tsx"
+      "path": "components/snappyui/card/card-08.tsx",
+      "target": "components/snappyui/card-08.tsx"
     }
   ]
 }

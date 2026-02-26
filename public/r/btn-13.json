@@ -1,18 +1,14 @@
 {
   "name": "btn-13",
   "type": "registry:component",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "button"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["button"],
   "files": [
     {
       "type": "registry:component",
       "content": "import { Button } from \"@/components/ui/button\";\r\nimport { cn } from \"@/lib/utils\";\r\n\r\ninterface Btn13Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {\r\n  icon?: string;\r\n  label?: string;\r\n  className?: string;\r\n}\r\n\r\nexport default function Btn13({\r\n  label = \"Welcome\",\r\n  className,\r\n  ...props\r\n}: Btn13Props) {\r\n  return (\r\n    <Button\r\n      variant=\"ghost\"\r\n      className={cn(\r\n        \"group relative w-1/2 h-12 px-4rounded-lg overflow-hidden transition-all duration-500\",\r\n        className\r\n      )}\r\n      {...props}\r\n    >\r\n      {/* Gradient border using pseudo-element */}\r\n      <div className=\"absolute inset-0 rounded-lg p-[2px] bg-linear-to-b from-[#336C4F] via-[#0C1F21] to-[#0D6437]\">\r\n        <div className=\"absolute inset-0 bg-[#0C1F21] rounded-lg opacity-90\" />\r\n      </div>\r\n\r\n      {/* Base dark background */}\r\n      <div className=\"absolute inset-[2px] bg-[#0C1F21] rounded-lg opacity-95\" />\r\n\r\n      {/* Multiple gradient layers */}\r\n      <div className=\"absolute inset-[2px] bg-linear-to-r from-[#0C1F21] via-[#0C1F21] to-[#0C1F21] rounded-lg opacity-90\" />\r\n      <div className=\"absolute inset-[2px] bg-linear-to-b from-[#347B52]/40 via-[#0C1F21] to-[#0D6437]/30 rounded-lg opacity-80\" />\r\n      <div className=\"absolute inset-[2px] bg-linear-to-br from-[#87F6B7]/10 via-[#0C1F21] to-[#17362A]/50 rounded-lg\" />\r\n\r\n      {/* Subtle edge glow */}\r\n      <div className=\"absolute inset-[2px] shadow-[inset_0_0_10px_rgba(135,246,183,0.1)] rounded-lg\" />\r\n\r\n      {/* Content wrapper */}\r\n      <div className=\"relative flex items-center justify-center gap-2\">\r\n        <span className=\"text-lg font-light bg-linear-to-b from-[#8AEECA] to-[#73F8A8] bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(135,246,183,0.4)] tracking-tighter\">\r\n          {label}\r\n        </span>\r\n      </div>\r\n\r\n      {/* Hover effects */}\r\n      <div className=\"absolute inset-[2px] opacity-0 transition-opacity duration-300 bg-linear-to-r from-[#17362A]/20 via-[#87F6B7]/10 to-[#17362A]/20 group-hover:opacity-100 rounded-lg\" />\r\n    </Button>\r\n  );\r\n}\r\n",
-      "path": "/components/snappyui/buttons/btn-13.tsx",
-      "target": "/components/snappyui/btn-13.tsx"
+      "path": "components/snappyui/buttons/btn-13.tsx",
+      "target": "components/snappyui/btn-13.tsx"
     }
   ]
 }

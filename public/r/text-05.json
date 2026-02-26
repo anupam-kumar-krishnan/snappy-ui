@@ -1,15 +1,13 @@
 {
   "name": "text-05",
   "type": "registry:component",
-  "dependencies": [
-    "motion"
-  ],
+  "dependencies": ["motion"],
   "files": [
     {
       "type": "registry:component",
       "content": "\"use client\";\r\n\r\nimport { cn } from \"@/lib/utils\";\r\nimport { motion, type Variants } from \"motion/react\";\r\n\r\ninterface BouncingTextProps {\r\n  text?: string;\r\n  className?: string;\r\n  delay?: number;\r\n  bouncingIndices?: number[];\r\n}\r\n\r\nexport default function Text_05({\r\n  text = \"SNAPPY UI\",\r\n  className = \"\",\r\n  delay = 0.1,\r\n  bouncingIndices = [0, 2, 5],\r\n}: BouncingTextProps) {\r\n  const letterAnimation: Variants = {\r\n    initial: { y: 0 },\r\n    animate: {\r\n      y: [-8, 0],\r\n      scaleY: [0.9, 1],\r\n      scaleX: [1.1, 1],\r\n      transition: {\r\n        y: {\r\n          type: \"spring\",\r\n          damping: 10,\r\n          stiffness: 100,\r\n          repeat: Infinity,\r\n          repeatType: \"reverse\",\r\n          duration: 1.2,\r\n        },\r\n        scaleY: {\r\n          type: \"spring\",\r\n          damping: 10,\r\n          stiffness: 100,\r\n          repeat: Infinity,\r\n          repeatType: \"reverse\",\r\n          duration: 1.2,\r\n        },\r\n        scaleX: {\r\n          type: \"spring\",\r\n          damping: 10,\r\n          stiffness: 100,\r\n          repeat: Infinity,\r\n          repeatType: \"reverse\",\r\n          duration: 1.2,\r\n        },\r\n      },\r\n    },\r\n  };\r\n\r\n  return (\r\n    <div className=\"flex items-center justify-center gap-[2px]\">\r\n      {text.split(\"\").map((letter, index) =>\r\n        bouncingIndices.includes(index) ? (\r\n          <motion.span\r\n            key={`text-05-${letter}`}\r\n            className={cn(\r\n              \"text-4xl font-bold text-black dark:text-white\",\r\n              \"transition-colors duration-200\",\r\n              \"hover:text-indigo-500 dark:hover:text-indigo-400\",\r\n              className\r\n            )}\r\n            variants={letterAnimation}\r\n            initial=\"initial\"\r\n            animate=\"animate\"\r\n            transition={{\r\n              delay: index * delay,\r\n            }}\r\n            whileHover={{\r\n              scale: 1.2,\r\n              transition: { duration: 0.2 },\r\n            }}\r\n          >\r\n            {letter}\r\n          </motion.span>\r\n        ) : (\r\n          <span\r\n            key={`text-05-${index}`}\r\n            className={cn(\r\n              \"text-4xl font-bold text-black dark:text-white\",\r\n              \"transition-colors duration-200\",\r\n              \"hover:text-indigo-500 dark:hover:text-indigo-400\",\r\n              className\r\n            )}\r\n          >\r\n            {letter}\r\n          </span>\r\n        )\r\n      )}\r\n    </div>\r\n  );\r\n}\r\n",
-      "path": "/components/snappyui/text/text-05.tsx",
-      "target": "/components/snappyui/text-05.tsx"
+      "path": "components/snappyui/text/text-05.tsx",
+      "target": "components/snappyui/text-05.tsx"
     }
   ]
 }

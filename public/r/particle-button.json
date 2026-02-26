@@ -1,19 +1,14 @@
 {
   "name": "particle-button",
   "type": "registry:component",
-  "dependencies": [
-    "lucide-react",
-    "motion"
-  ],
-  "registryDependencies": [
-    "button"
-  ],
+  "dependencies": ["lucide-react", "motion"],
+  "registryDependencies": ["button"],
   "files": [
     {
       "type": "registry:component",
       "content": "\"use client\";\r\n\r\nimport { useState, useRef, type RefObject } from \"react\";\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { motion, AnimatePresence } from \"motion/react\";\r\nimport { cn } from \"@/lib/utils\";\r\nimport type { ButtonProps } from \"@/components/ui/button\";\r\nimport { MousePointerClick } from \"lucide-react\";\r\n\r\ninterface ParticleButtonProps extends ButtonProps {\r\n  onSuccess?: () => void;\r\n  successDuration?: number;\r\n}\r\n\r\nfunction SuccessParticles({\r\n  buttonRef,\r\n}: {\r\n  buttonRef: React.RefObject<HTMLButtonElement>;\r\n}) {\r\n  const rect = buttonRef.current?.getBoundingClientRect();\r\n  if (!rect) return null;\r\n\r\n  const centerX = rect.left + rect.width / 2;\r\n  const centerY = rect.top + rect.height / 2;\r\n\r\n  return (\r\n    <AnimatePresence>\r\n      {[...Array(6)].map((_, i) => (\r\n        <motion.div\r\n          key={i}\r\n          className=\"fixed w-1 h-1 bg-black dark:bg-white rounded-full\"\r\n          style={{ left: centerX, top: centerY }}\r\n          initial={{\r\n            scale: 0,\r\n            x: 0,\r\n            y: 0,\r\n          }}\r\n          animate={{\r\n            scale: [0, 1, 0],\r\n            x: [0, (i % 2 ? 1 : -1) * (Math.random() * 50 + 20)],\r\n            y: [0, -Math.random() * 50 - 20],\r\n          }}\r\n          transition={{\r\n            duration: 0.6,\r\n            delay: i * 0.1,\r\n            ease: \"easeOut\",\r\n          }}\r\n        />\r\n      ))}\r\n    </AnimatePresence>\r\n  );\r\n}\r\n\r\nexport default function ParticleButton({\r\n  children,\r\n  onClick,\r\n  onSuccess,\r\n  successDuration = 1000,\r\n  className,\r\n  ...props\r\n}: ParticleButtonProps) {\r\n  const [showParticles, setShowParticles] = useState(false);\r\n  const buttonRef = useRef<HTMLButtonElement>(null);\r\n\r\n  const handleClick = async (e: React.MouseEvent<HTMLButtonElement>) => {\r\n    setShowParticles(true);\r\n\r\n    setTimeout(() => {\r\n      setShowParticles(false);\r\n    }, successDuration);\r\n  };\r\n\r\n  return (\r\n    <>\r\n      {showParticles && (\r\n        <SuccessParticles\r\n          buttonRef={buttonRef as RefObject<HTMLButtonElement>}\r\n        />\r\n      )}\r\n      <Button\r\n        ref={buttonRef}\r\n        onClick={handleClick}\r\n        className={cn(\r\n          \"relative\",\r\n          showParticles && \"scale-95\",\r\n          \"transition-transform duration-100\",\r\n          \"bg-black text-white dark:bg-white dark:text-black\",\r\n          className\r\n        )}\r\n        {...props}\r\n      >\r\n        {children}\r\n        <MousePointerClick className=\"h-4 w-4\" />\r\n      </Button>\r\n    </>\r\n  );\r\n}\r\n",
-      "path": "/components/snappyui/particle-button.tsx",
-      "target": "/components/snappyui/particle-button.tsx"
+      "path": "components/snappyui/particle-button.tsx",
+      "target": "components/snappyui/particle-button.tsx"
     }
   ]
 }

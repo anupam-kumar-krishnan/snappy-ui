@@ -1,17 +1,14 @@
 {
   "name": "alert-04",
   "type": "registry:component",
-  "dependencies": [
-    "lucide-react",
-    "motion"
-  ],
+  "dependencies": ["lucide-react", "motion"],
   "registryDependencies": [],
   "files": [
     {
       "type": "registry:component",
       "content": "\"use client\";\r\n\r\nimport { cn } from \"@/lib/utils\";\r\nimport { motion } from \"motion/react\";\r\nimport { PartyPopper } from \"lucide-react\";\r\n\r\nexport default function Alert04() {\r\n  return (\r\n    <motion.div\r\n      initial={{ opacity: 0, y: -8 }}\r\n      animate={{ opacity: 1, y: 0 }}\r\n      className=\"w-full max-w-xl mx-auto\"\r\n    >\r\n      <div\r\n        className={cn(\r\n          \"relative overflow-hidden\",\r\n          \"bg-linear-to-b from-violet-50 to-white\",\r\n          \"dark:from-violet-950/20 dark:to-zinc-950\",\r\n          \"border border-violet-100 dark:border-violet-900/50\",\r\n          \"shadow-[0_1px_6px_0_rgba(139,92,246,0.06)]\",\r\n          \"rounded-xl p-4\"\r\n        )}\r\n      >\r\n        <div className=\"flex items-center gap-4\">\r\n          <motion.div\r\n            initial={{ rotate: -15, scale: 0.5 }}\r\n            animate={{ rotate: 0, scale: 1 }}\r\n            transition={{\r\n              type: \"spring\",\r\n              stiffness: 300,\r\n              damping: 20,\r\n            }}\r\n          >\r\n            <div\r\n              className={cn(\r\n                \"p-2.5 rounded-xl\",\r\n                \"bg-linear-to-br from-fuchsia-500 via-violet-500 to-indigo-500\",\r\n                \"dark:from-fuchsia-600 dark:via-violet-600 dark:to-indigo-600\"\r\n              )}\r\n            >\r\n              <PartyPopper className=\"h-5 w-5 text-white\" />\r\n            </div>\r\n          </motion.div>\r\n\r\n          <div className=\"space-y-1\">\r\n            <motion.h3\r\n              initial={{ opacity: 0, x: 20 }}\r\n              animate={{ opacity: 1, x: 0 }}\r\n              transition={{ delay: 0.1 }}\r\n              className={cn(\r\n                \"font-medium\",\r\n                \"text-violet-900 dark:text-violet-100\"\r\n              )}\r\n            >\r\n              Amazing milestone! 🎉\r\n            </motion.h3>\r\n            <motion.p\r\n              initial={{ opacity: 0, x: 20 }}\r\n              animate={{ opacity: 1, x: 0 }}\r\n              transition={{ delay: 0.2 }}\r\n              className={cn(\"text-sm\", \"text-violet-600 dark:text-violet-300\")}\r\n            >\r\n              You've just hit 1,000 followers on your journey!\r\n            </motion.p>\r\n          </div>\r\n        </div>\r\n\r\n        <div className=\"hidden sm:block absolute top-4 right-4\">\r\n          <motion.div\r\n            initial={{ scale: 0 }}\r\n            animate={{ scale: 1 }}\r\n            transition={{\r\n              type: \"spring\",\r\n              stiffness: 300,\r\n              damping: 20,\r\n              delay: 0.3,\r\n            }}\r\n            className={cn(\r\n              \"text-[11px] font-medium\",\r\n              \"px-2.5 py-0.5 rounded-full\",\r\n              \"bg-linear-to-r from-fuchsia-500/10 via-violet-500/10 to-indigo-500/10\",\r\n              \"dark:from-fuchsia-500/20 dark:via-violet-500/20 dark:to-indigo-500/20\",\r\n              \"text-violet-700 dark:text-violet-200\",\r\n              \"ring-1 ring-violet-500/20 dark:ring-violet-400/20\"\r\n            )}\r\n          >\r\n            Milestone\r\n          </motion.div>\r\n        </div>\r\n      </div>\r\n    </motion.div>\r\n  );\r\n}\r\n",
-      "path": "/components/snappyui/alert/alert-04.tsx",
-      "target": "/components/snappyui/alert-04.tsx"
+      "path": "components/snappyui/alert/alert-04.tsx",
+      "target": "components/snappyui/alert-04.tsx"
     }
   ]
 }

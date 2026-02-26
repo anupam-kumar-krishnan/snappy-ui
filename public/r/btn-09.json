@@ -1,18 +1,14 @@
 {
   "name": "btn-09",
   "type": "registry:component",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "button"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["button"],
   "files": [
     {
       "type": "registry:component",
       "content": "import { Button } from \"@/components/ui/button\";\r\nimport { cn } from \"@/lib/utils\";\r\n\r\nexport default function Btn09({\r\n  className,\r\n  children,\r\n  ...props\r\n}: React.ButtonHTMLAttributes<HTMLButtonElement> & {\r\n  children: React.ReactNode;\r\n}) {\r\n  return (\r\n    <Button\r\n      {...props}\r\n      className={cn(\r\n        \"relative p-2\",\r\n        \"rounded-lg overflow-hidden\",\r\n        \"bg-linear-to-b from-zinc-50 to-zinc-100\",\r\n        \"dark:from-zinc-800 dark:to-zinc-900\",\r\n        \"border border-zinc-200 dark:border-zinc-800\",\r\n        \"hover:border-zinc-300 dark:hover:border-zinc-700\",\r\n        \"transition-all duration-300 ease-out\",\r\n        \"group\",\r\n        \"inline-flex items-center justify-center\",\r\n        className\r\n      )}\r\n    >\r\n      {children}\r\n      <span\r\n        className={cn(\r\n          \"absolute inset-0\",\r\n          \"bg-linear-to-r from-indigo-500/0 via-indigo-500/10 to-indigo-500/0\",\r\n          \"translate-x-[-100%]\",\r\n          \"group-hover:translate-x-[100%]\",\r\n          \"transition-transform duration-500\",\r\n          \"ease-out\"\r\n        )}\r\n      />\r\n    </Button>\r\n  );\r\n}\r\n",
-      "path": "/components/snappyui/buttons/btn-09.tsx",
-      "target": "/components/snappyui/btn-09.tsx"
+      "path": "components/snappyui/buttons/btn-09.tsx",
+      "target": "components/snappyui/btn-09.tsx"
     }
   ]
 }

@@ -1,18 +1,14 @@
 {
   "name": "alert-07",
   "type": "registry:component",
-  "dependencies": [
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "button"
-  ],
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["button"],
   "files": [
     {
       "type": "registry:component",
       "content": "import { Button } from \"@/components/ui/button\";\r\n\r\nexport default function Alert07() {\r\n  return (\r\n    <div>\r\n      <div className=\"bg-white dark:bg-zinc-900/95 backdrop-blur-xs rounded-lg flex flex-col items-center justify-center gap-2 p-6 shadow-xs border border-blue-800/20 dark:border-gray-400/20\">\r\n        <div className=\"text-gray-900 dark:text-blue-300 my-2 font-semibold\">\r\n          FREE TRIAL EXPIRED\r\n        </div>\r\n        <div className=\"flex flex-col items-center justify-center gap-6\">\r\n          <p className=\"text-center text-md text-gray-700 dark:text-gray-300\">\r\n            Subscribe now to continue using our services.\r\n          </p>\r\n          <Button\r\n            type=\"button\"\r\n            className=\"relative group overflow-hidden bg-blue-700 dark:bg-emrald-200 hover:bg-emrald-800 dark:hover:bg-blue-600 backdrop-blur-xs border border-blue-400/30 dark:emrald-blue-600/30 transition-all duration-300\"\r\n          >\r\n            <span className=\"relative z-10 font-semibold text-sm text-white\">\r\n              Subscribe Now\r\n            </span>\r\n            <div className=\"absolute inset-0 -translate-x-full group-hover:translate-x-0 bg-linear-to-r from-transparent via-blue-600 to-transparent dark:via-blue-500 transition-transform duration-700 ease-out\" />\r\n          </Button>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n",
-      "path": "/components/snappyui/alert/alert-07.tsx",
-      "target": "/components/snappyui/alert-07.tsx"
+      "path": "components/snappyui/alert/alert-07.tsx",
+      "target": "components/snappyui/alert-07.tsx"
     }
   ]
 }

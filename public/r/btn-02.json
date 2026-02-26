@@ -1,15 +1,13 @@
 {
   "name": "btn-02",
   "type": "registry:component",
-  "registryDependencies": [
-    "button"
-  ],
+  "registryDependencies": ["button"],
   "files": [
     {
       "type": "registry:component",
       "content": "import { Button } from \"@/components/ui/button\";\r\nimport { cn } from \"@/lib/utils\";\r\n\r\nexport default function Btn02({\r\n  className,\r\n  children = \"Continue\",\r\n  ...props\r\n}: React.ButtonHTMLAttributes<HTMLButtonElement>) {\r\n  return (\r\n    <Button\r\n      className={cn(\r\n        \"relative h-11 px-6\",\r\n        \"bg-white dark:bg-zinc-900/20\",\r\n        \"text-zinc-900 dark:text-zinc-100\",\r\n        \"border border-zinc-200 dark:border-zinc-800\",\r\n        \"shadow-xs\",\r\n        \"hover:shadow-md hover:-translate-y-0.5\",\r\n        \"hover:bg-zinc-50 dark:hover:bg-zinc-900\",\r\n        \"active:translate-y-0\",\r\n        \"transition-all duration-200\",\r\n        \"after:absolute after:inset-0\",\r\n        \"after:rounded-[inherit] after:opacity-0\",\r\n        \"after:border after:border-zinc-900/10 dark:after:border-white/10\",\r\n        \"after:transition-opacity after:duration-300\",\r\n        \"hover:after:opacity-100\",\r\n        className\r\n      )}\r\n      {...props}\r\n    >\r\n      {children}\r\n    </Button>\r\n  );\r\n}\r\n",
-      "path": "/components/snappyui/buttons/btn-02.tsx",
-      "target": "/components/snappyui/btn-02.tsx"
+      "path": "components/snappyui/buttons/btn-02.tsx",
+      "target": "components/snappyui/btn-02.tsx"
     }
   ]
 }
