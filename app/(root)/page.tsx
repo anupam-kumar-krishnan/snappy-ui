@@ -1,6 +1,7 @@
 import ComponentShowcaseCard from "@/components/landing/component-showcase-card";
 import { HeroSection } from "@/components/landing/hero";
 import InteractivePreview from "@/components/landing/interactive-preview";
+import BentoBox from "@/components/landing/bento-box";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       </div>
 
       <ComponentShowcaseCard />
+      <BentoBox />
       <InteractivePreview />
       {/* <BuildInterfacesCard className="mx-auto w-full max-w-7xl px-4 sm:px-6 py-12 md:py-16 lg:py-20" /> */}
     </main>
