@@ -1,9 +1,6 @@
-// import EventToast from "@/components/event-toast";
 import ComponentShowcaseCard from "@/components/landing/component-showcase-card";
 import { HeroSection } from "@/components/landing/hero";
-import { InteractivePreview } from "@/components/landing/interactive-preview";
-
-import { TechnologyBadges } from "@/components/landing/technology-badges";
+import InteractivePreview from "@/components/landing/interactive-preview";
 
 export default function Home() {
   return (
@@ -15,9 +12,6 @@ export default function Home() {
       <ComponentShowcaseCard />
       <InteractivePreview />
       {/* <BuildInterfacesCard className="mx-auto w-full max-w-7xl px-4 sm:px-6 py-12 md:py-16 lg:py-20" /> */}
-
-      {/* <TechnologyBadges /> */}
-      {/* <EventToast /> */}
     </main>
   );
 }

@@ -1,130 +1,64 @@
 "use client";
 
-import { motion } from "motion/react";
-import { useState } from "react";
-import { cn } from "@/lib/utils";
-import { Code, Palette, Zap } from "lucide-react";
-
-interface Feature {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-  preview: React.ReactNode;
-}
-
-const FEATURES: Feature[] = [
-  {
-    icon: <Code className="w-5 h-5" />,
-    title: "Copy & Paste Ready",
-    description:
-      "Every component is ready to be copied directly into your project.",
-    preview: (
-      <div className="w-full h-full bg-linear-to-br from-zinc-900 to-zinc-800 dark:from-zinc-200 dark:to-zinc-100 rounded-lg p-4">
-        <pre className="text-xs text-white dark:text-zinc-900">
-          <code className="text-lg">
-            {`export function Button() {\n  return (\n    <button className="...">\n      Click me\n    </button>\n  );\n}`}
-          </code>
-        </pre>
-      </div>
-    ),
-  },
-  {
-    icon: <Palette className="w-5 h-5" />,
-    title: "Fully Customizable",
-    description: "Tailwind-based styling that's easy to modify and extend.",
-    preview: (
-      <div className="grid grid-cols-4 gap-3 mt-5">
-        {[
-          "bg-red-500",
-          "bg-orange-500",
-          "bg-amber-500",
-          "bg-yellow-500",
-          "bg-lime-500",
-          "bg-green-500",
-          "bg-blue-500",
-          "bg-indigo-500",
-        ].map((color, i) => (
-          <div
-            key={i}
-            className={cn(
-              "aspect-square rounded-lg transition-transform hover:scale-105",
-              color
-            )}
-          />
-        ))}
-      </div>
-    ),
-  },
-  {
-    icon: <Zap className="w-5 h-5" />,
-    title: "Interactive Elements",
-    description: "Smooth animations and transitions built-in.",
-    preview: (
-      <div className="flex items-center justify-center">
-        <motion.div
-          animate={{
-            scale: [1, 1.2, 1],
-            rotate: [0, 180, 360],
-          }}
-          transition={{
-            duration: 2,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-          className="w-25 h-25 bg-linear-to-r from-indigo-500 via-violet-500 to-pink-500 rounded-2xl mt-30"
-        />
-      </div>
-    ),
-  },
-];
-
-export function InteractivePreview() {
-  const [activeFeature, setActiveFeature] = useState(0);
-
+export default function InteractivePreview() {
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 py-16">
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-8">
-        <div className="space-y-8">
-          {FEATURES.map((feature, index) => (
-            <motion.div
-              key={index}
-              className={cn(
-                "p-6 rounded-2xl cursor-pointer",
-                activeFeature === index
-                  ? "bg-zinc-100 dark:bg-zinc-800/50"
-                  : "hover:bg-zinc-50 dark:hover:bg-zinc-800/30"
-              )}
-              onClick={() => setActiveFeature(index)}
-              whileHover={{ x: 5 }}
-              transition={{ duration: 0.2 }}
-            >
-              <div className="flex items-start gap-4">
-                <div className="p-2 rounded-lg bg-zinc-200 dark:bg-zinc-700">
-                  {feature.icon}
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-1">
-                    {feature.title}
-                  </h3>
-                  <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                    {feature.description}
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
-        <div className="lg:h-[400px] p-8 rounded-3xl bg-linear-to-b from-white to-zinc-50 dark:from-zinc-900 dark:to-zinc-900/50 border border-zinc-200 dark:border-zinc-800">
-          <motion.div
-            key={activeFeature}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3 }}
-            className="w-full h-full"
+    <div className="bg-white dark:bg-[#08090b]">
+      <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+        <div className="relative isolate overflow-hidden bg-black px-6 pt-16 after:pointer-events-none after:absolute after:inset-0 after:inset-ring after:inset-ring-white/10 sm:rounded-3xl sm:px-16 after:sm:rounded-3xl md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+          <svg
+            viewBox="0 0 1024 1024"
+            aria-hidden="true"
+            className="absolute top-1/2 left-1/2 -z-10 size-256 -translate-y-1/2 mask-[radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
           >
-            {FEATURES[activeFeature].preview}
-          </motion.div>
+            <circle
+              r={512}
+              cx={512}
+              cy={512}
+              fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
+              fillOpacity="0.7"
+            />
+            <defs>
+              <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+                <stop stopColor="#7775D6" />
+                <stop offset={1} stopColor="#3949AB" />
+              </radialGradient>
+            </defs>
+          </svg>
+          <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+            <h2 className="text-3xl font-semibold tracking-tight text-balance text-white sm:text-4xl">
+              Confused regarding Components?. Checkout{" "}
+              <span className="text-indigo-500">Snappy UI</span> today.
+            </h2>
+            <p className="mt-6 text-lg/8 text-pretty text-gray-300">
+              25+ reusable components. Clean code. Fully responsive. Built for
+              modern web applications.
+            </p>
+            <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+              <a
+                href="#"
+                className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white inset-ring inset-ring-white/5 hover:bg-gray-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                {" "}
+                Get started{" "}
+              </a>
+              <a
+                href="#"
+                className="text-sm/6 font-semibold text-white hover:text-gray-100"
+              >
+                Learn more
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+          <div className="relative mt-16 h-80 lg:mt-8">
+            <img
+              alt="Snappy UI Docs screenshot"
+              src="/hero-section.png"
+              width={1824}
+              height={1080}
+              className="absolute top-0 left-0 w-228 max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+            />
+          </div>
         </div>
       </div>
     </div>

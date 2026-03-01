@@ -10,9 +10,6 @@ import {
   MessageSquare,
   Search,
   Send,
-  BarChart3,
-  Sliders,
-  Star,
 } from "lucide-react";
 import { useState } from "react";
 
