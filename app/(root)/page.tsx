@@ -16,7 +16,7 @@ export default function Home() {
       <InteractivePreview />
       {/* <BuildInterfacesCard className="mx-auto w-full max-w-7xl px-4 sm:px-6 py-12 md:py-16 lg:py-20" /> */}
 
-      <TechnologyBadges />
+      {/* <TechnologyBadges /> */}
       {/* <EventToast /> */}
     </main>
   );
