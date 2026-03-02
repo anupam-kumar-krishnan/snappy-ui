@@ -23,20 +23,19 @@ function App() {
   const [newTag, setNewTag] = useState("");
 
   return (
-    <div className="min-h-screen bg-[#08090b] p-4 sm:p-6 lg:p-8">
+    <div className="min-h-screen bg-white dark:bg-[#08090b] p-4 sm:p-6 lg:p-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8 sm:mb-12">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 flex items-center justify-center gap-2 sm:gap-3">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 flex items-center justify-center gap-2 sm:gap-3">
             <Sparkles className="text-indigo-400" size={32} />
             Some Components
           </h1>
-          <p className="text-indigo-300 text-base sm:text-lg">
+          <p className="text-indigo-600 dark:text-indigo-300 text-base sm:text-lg">
             25+ Beautiful Components for Modern React Apps
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 lg:auto-rows-[180px]">
-          {/* Card Component */}
           <div className="sm:col-span-2 lg:col-span-2 lg:row-span-2 group relative bg-gradient-to-br from-indigo-500/10 to-indigo-600/5 backdrop-blur-sm border border-indigo-500/20 rounded-2xl p-4 sm:p-6 overflow-hidden transition-all duration-300 hover:border-indigo-400/50 hover:shadow-[0_0_30px_rgba(99,102,241,0.3)]">
             <div className="absolute inset-0 bg-gradient-to-br from-indigo-400/0 to-indigo-600/0 group-hover:from-indigo-400/5 group-hover:to-indigo-600/10 transition-all duration-300" />
             <div className="relative z-10 h-full flex flex-col">
@@ -52,22 +51,22 @@ function App() {
                     <h4 className="text-white font-semibold text-xs sm:text-sm truncate">
                       Aman Kumar
                     </h4>
-                    <p className="text-indigo-300 text-[10px] sm:text-xs truncate">
+                    <p className="text-indigo-600 dark:text-indigo-300 text-[10px] sm:text-xs truncate">
                       Design Engineer
                     </p>
                   </div>
                 </div>
-                <p className="text-indigo-200 text-[11px] sm:text-xs leading-relaxed mb-2">
+                <p className="dark:text-indigo-200 text-[11px] sm:text-xs leading-relaxed mb-2">
                   Quickly prototype or build beautiful interfaces in
                   React/Next.js without writing all styles from scratch - Snappy
                   UI
                 </p>
-                <p className="text-indigo-200 text-[11px] sm:text-xs leading-relaxed mb-2">
+                <p className="dark:text-indigo-200 text-[11px] sm:text-xs leading-relaxed mb-2">
                   Snappy UI includes support for dark mode, animated toggles,
                   gradient/outline button variants, toast messages, and more —
                   giving you polished UI elements out of the box.
                 </p>
-                <p className="text-indigo-200 text-[11px] sm:text-xs leading-relaxed">
+                <p className="dark:text-indigo-200 text-[11px] sm:text-xs leading-relaxed">
                   I'll reccomend everyone to use Snappy UI.
                 </p>
               </div>
