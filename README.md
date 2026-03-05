@@ -21,6 +21,30 @@ Every component is crafted with performance, accessibility, and customization in
 
 <img width="1640" height="924" alt="Components Showcase" src="https://github.com/user-attachments/assets/70bb61b9-e2f9-40ea-a4fd-cfc0311f0fd8" />
 
+<img width="1897" height="786" alt="image" src="https://github.com/user-attachments/assets/4897d75e-325f-4923-9961-6409719e2366" />
+
+<img width="1139" height="795" alt="image" src="https://github.com/user-attachments/assets/fcc04bc4-640c-4b2d-b40f-11290c0c8e5e" />
+
+## Installation
+
+To include any component in you **React.js / Next.js** project, just **search the component**, **copy** the command by clicking on mentioned button
+
+For example, below is the command to install **AI Chat** Component
+
+```bash
+ npx shadcn@latest add https://snappy-ui-six.vercel.app/r/ai-chat.json
+```
+
+Post installation, just use the component by changing the content according to your need:
+
+```jsx
+import AIChat from "@/components/snappyui/AIChat";
+
+export default function Page() {
+  return <AIChat />;
+}
+```
+
 ## _🛠 Tech Stack_
 
 - **Next.js** – App Router–ready, SEO-friendly, and Optimized for Performance
@@ -32,6 +56,8 @@ Every component is crafted with performance, accessibility, and customization in
 ## _✨ Features_
 
 🚀 Ready-to-use **_Unique Components_** (Hero Section, Bento Grid, Avatar Picker, AI Input Template, Alerts, Button, Card, etc.) to build stunning **_Landing Pages_**<br>
+
+🔎 **Keyboard Shortcut** with **Search Functionality** to find components easily
 
 🎨 Fully customizable using Tailwind CSS<br>
 📱 Responsive by default across all screen sizes<br>
