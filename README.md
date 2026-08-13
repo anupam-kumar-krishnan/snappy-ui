@@ -10,7 +10,7 @@
 <img src="https://img.shields.io/badge/Shadcn UI-000000?&logo=shadcnui">
 </div>
 
-## _📖 Snappy UI_
+## _📖 Snappy UI - [🌐 Live Preview](https://snappy-ui-six.vercel.app/)_
 
 A Modern UI Component Library - **Snappy UI** - built to help developers **design** and ship **stunning landing pages** faster.
 This library provides a curated collection of production-ready, responsive, and animated UI components that can be plugged directly into your **Next.js** or **React** projects.
