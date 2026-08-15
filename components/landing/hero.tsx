@@ -61,7 +61,7 @@ export function HeroSection() {
           </h1>
           <p className="mt-6 text-base md:text-md text-zinc-700 dark:text-zinc-300 max-w-lg">
             A curated collection of{" "}
-            <span className="font-semibold">10+ Premium UI components</span>{" "}
+            <span className="font-semibold">25+ Premium UI components</span>{" "}
             crafted with{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-600 dark:from-indigo-500 dark:to-indigo-600 font-semibold">
               Tailwind CSS

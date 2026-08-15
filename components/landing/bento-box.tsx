@@ -57,9 +57,8 @@ function App() {
                   </div>
                 </div>
                 <p className="dark:text-indigo-200 text-[11px] sm:text-xs leading-relaxed mb-2">
-                  Quickly prototype or build beautiful interfaces in
-                  React/Next.js without writing all styles from scratch - Snappy
-                  UI
+                  Snappy UI let me prototype clean React interfaces fast — no
+                  more writing every style from scratch.
                 </p>
                 <p className="dark:text-indigo-200 text-[11px] sm:text-xs leading-relaxed mb-2">
                   Snappy UI includes support for dark mode, animated toggles,
@@ -67,7 +66,7 @@ function App() {
                   giving you polished UI elements out of the box.
                 </p>
                 <p className="dark:text-indigo-200 text-[11px] sm:text-xs leading-relaxed">
-                  I'll reccomend everyone to use Snappy UI.
+                  I'll recommend everyone to use Snappy UI.
                 </p>
               </div>
             </div>

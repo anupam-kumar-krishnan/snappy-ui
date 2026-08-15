@@ -24,7 +24,7 @@ const lexend = Lexend({
 
 export const metadata: Metadata = {
   title: "Snappy UI",
-  description: "A UI Libraray consisting of rady available Components",
+  description: "A UI Library consisting of ready-to-use Components",
 };
 
 export default function RootLayout({
